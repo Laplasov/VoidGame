@@ -1,0 +1,288 @@
+[16-10-2026 01:48:36.437] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[16-10-2026 01:48:36.441] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[16-10-2026 01:48:36.441] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[16-10-2026 01:48:36.441] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[16-10-2026 01:48:36.441] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[16-10-2026 01:48:36.441] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[16-10-2026 01:48:36.447] [Info] Version: 2.2.1.0  Hash: 1268E6444153F852
+[16-10-2026 01:48:36.447] [Info] 
+[16-10-2026 01:48:36.450] [Info] [Window] Creating SDL window: 1280x720 'Game' Mode=Windowed VSync=True
+[16-10-2026 01:48:36.863] [Info] [Platform] SDL video backend:
+[16-10-2026 01:48:36.863] [Info] [Platform] Name: windows
+[16-10-2026 01:48:36.863] [Info] [Platform] Backend: Windows
+[16-10-2026 01:48:36.863] [Info] [Platform] Window capabilities:
+[16-10-2026 01:48:36.863] [Info] [Platform] CanPositionWindow: True
+[16-10-2026 01:48:36.863] [Info] [Platform] CanSelectWindowedDisplay: True
+[16-10-2026 01:48:36.863] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[16-10-2026 01:48:36.863] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[16-10-2026 01:48:36.863] [Info] [Platform] SupportsDisplayEnumeration: True
+[16-10-2026 01:48:36.863] [Info] [Platform] SupportsDisplayModes: True
+[16-10-2026 01:48:36.863] [Info] [Platform] SupportsContentScale: True
+[16-10-2026 01:48:36.863] [Info] [Platform] UsesCompositorWindowPlacement: False
+[16-10-2026 01:48:37.604] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[16-10-2026 01:48:37.606] [Info] [AssetManager] Initialized with 1 mounts
+[16-10-2026 01:48:37.619] [Info] [Game] Default font loaded successfully
+[16-10-2026 01:48:37.619] [Info] VOID setting up Application folders...
+[16-10-2026 01:48:37.620] [Info] Application folders ready
+[16-10-2026 01:48:37.724] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[16-10-2026 01:48:42.572] [Info] [Coroutine] Stopping all coroutines (0 running)
+[16-10-2026 01:48:42.576] [Info] [AssetManager] Clearing 6 assets and 1 mounts
+[16-10-2026 01:48:42.578] [Info] [Atlas] Clearing renderer atlas: 22 textures, 4 pages
+[16-10-2026 01:48:42.584] [Info] [Window] Disposing SDL window and renderer
+[16-10-2026 01:48:42.612] [Info] [Window] Window disposed
+[16-10-2026 01:48:57.454] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[16-10-2026 01:48:57.458] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[16-10-2026 01:48:57.458] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[16-10-2026 01:48:57.458] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[16-10-2026 01:48:57.458] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[16-10-2026 01:48:57.458] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[16-10-2026 01:48:57.464] [Info] Version: 2.2.1.0  Hash: 1268E6444153F852
+[16-10-2026 01:48:57.464] [Info] 
+[16-10-2026 01:48:57.467] [Info] [Window] Creating SDL window: 1280x720 'Game' Mode=Windowed VSync=True
+[16-10-2026 01:48:57.667] [Info] [Platform] SDL video backend:
+[16-10-2026 01:48:57.667] [Info] [Platform] Name: windows
+[16-10-2026 01:48:57.667] [Info] [Platform] Backend: Windows
+[16-10-2026 01:48:57.667] [Info] [Platform] Window capabilities:
+[16-10-2026 01:48:57.667] [Info] [Platform] CanPositionWindow: True
+[16-10-2026 01:48:57.667] [Info] [Platform] CanSelectWindowedDisplay: True
+[16-10-2026 01:48:57.667] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[16-10-2026 01:48:57.667] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[16-10-2026 01:48:57.667] [Info] [Platform] SupportsDisplayEnumeration: True
+[16-10-2026 01:48:57.667] [Info] [Platform] SupportsDisplayModes: True
+[16-10-2026 01:48:57.667] [Info] [Platform] SupportsContentScale: True
+[16-10-2026 01:48:57.667] [Info] [Platform] UsesCompositorWindowPlacement: False
+[16-10-2026 01:48:58.010] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[16-10-2026 01:48:58.012] [Info] [AssetManager] Initialized with 1 mounts
+[16-10-2026 01:48:58.025] [Info] [Game] Default font loaded successfully
+[16-10-2026 01:48:58.025] [Info] VOID setting up Application folders...
+[16-10-2026 01:48:58.026] [Info] Application folders ready
+[16-10-2026 01:48:58.125] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[16-10-2026 01:49:02.697] [Info] [Coroutine] Stopping all coroutines (0 running)
+[16-10-2026 01:49:02.701] [Info] [AssetManager] Clearing 6 assets and 1 mounts
+[16-10-2026 01:49:02.703] [Info] [Atlas] Clearing renderer atlas: 22 textures, 4 pages
+[16-10-2026 01:49:02.708] [Info] [Window] Disposing SDL window and renderer
+[16-10-2026 01:49:02.728] [Info] [Window] Window disposed
+[16-10-2026 01:59:25.139] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[16-10-2026 01:59:25.144] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[16-10-2026 01:59:25.144] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[16-10-2026 01:59:25.144] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[16-10-2026 01:59:25.144] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[16-10-2026 01:59:25.144] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[16-10-2026 01:59:25.149] [Info] Version: 2.2.1.0  Hash: 1268E6444153F852
+[16-10-2026 01:59:25.149] [Info] 
+[16-10-2026 01:59:25.151] [Info] [Window] Creating SDL window: 1280x720 'Game' Mode=Windowed VSync=True
+[16-10-2026 01:59:25.353] [Info] [Platform] SDL video backend:
+[16-10-2026 01:59:25.353] [Info] [Platform] Name: windows
+[16-10-2026 01:59:25.353] [Info] [Platform] Backend: Windows
+[16-10-2026 01:59:25.353] [Info] [Platform] Window capabilities:
+[16-10-2026 01:59:25.354] [Info] [Platform] CanPositionWindow: True
+[16-10-2026 01:59:25.354] [Info] [Platform] CanSelectWindowedDisplay: True
+[16-10-2026 01:59:25.354] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[16-10-2026 01:59:25.354] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[16-10-2026 01:59:25.354] [Info] [Platform] SupportsDisplayEnumeration: True
+[16-10-2026 01:59:25.354] [Info] [Platform] SupportsDisplayModes: True
+[16-10-2026 01:59:25.354] [Info] [Platform] SupportsContentScale: True
+[16-10-2026 01:59:25.354] [Info] [Platform] UsesCompositorWindowPlacement: False
+[16-10-2026 01:59:25.790] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[16-10-2026 01:59:25.792] [Info] [AssetManager] Initialized with 1 mounts
+[16-10-2026 01:59:25.806] [Info] [Game] Default font loaded successfully
+[16-10-2026 01:59:25.806] [Info] VOID setting up Application folders...
+[16-10-2026 01:59:25.806] [Info] Application folders ready
+[16-10-2026 01:59:25.905] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[16-10-2026 01:59:30.008] [Info] [Coroutine] Stopping all coroutines (0 running)
+[16-10-2026 01:59:30.012] [Info] [AssetManager] Clearing 6 assets and 1 mounts
+[16-10-2026 01:59:30.015] [Info] [Atlas] Clearing renderer atlas: 22 textures, 4 pages
+[16-10-2026 01:59:30.020] [Info] [Window] Disposing SDL window and renderer
+[16-10-2026 01:59:30.040] [Info] [Window] Window disposed
+[16-10-2026 02:00:00.687] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[16-10-2026 02:00:00.693] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[16-10-2026 02:00:00.693] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[16-10-2026 02:00:00.693] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[16-10-2026 02:00:00.693] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[16-10-2026 02:00:00.693] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[16-10-2026 02:00:00.699] [Info] Version: 2.2.1.0  Hash: 1268E6444153F852
+[16-10-2026 02:00:00.699] [Info] 
+[16-10-2026 02:00:00.703] [Info] [Window] Creating SDL window: 1280x720 'Game' Mode=Windowed VSync=True
+[16-10-2026 02:00:00.904] [Info] [Platform] SDL video backend:
+[16-10-2026 02:00:00.904] [Info] [Platform] Name: windows
+[16-10-2026 02:00:00.904] [Info] [Platform] Backend: Windows
+[16-10-2026 02:00:00.904] [Info] [Platform] Window capabilities:
+[16-10-2026 02:00:00.904] [Info] [Platform] CanPositionWindow: True
+[16-10-2026 02:00:00.904] [Info] [Platform] CanSelectWindowedDisplay: True
+[16-10-2026 02:00:00.904] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[16-10-2026 02:00:00.904] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[16-10-2026 02:00:00.905] [Info] [Platform] SupportsDisplayEnumeration: True
+[16-10-2026 02:00:00.905] [Info] [Platform] SupportsDisplayModes: True
+[16-10-2026 02:00:00.905] [Info] [Platform] SupportsContentScale: True
+[16-10-2026 02:00:00.905] [Info] [Platform] UsesCompositorWindowPlacement: False
+[16-10-2026 02:00:01.232] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[16-10-2026 02:00:01.234] [Info] [AssetManager] Initialized with 1 mounts
+[16-10-2026 02:00:01.247] [Info] [Game] Default font loaded successfully
+[16-10-2026 02:00:01.248] [Info] VOID setting up Application folders...
+[16-10-2026 02:00:01.248] [Info] Application folders ready
+[16-10-2026 02:00:01.341] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[16-10-2026 02:00:03.064] [Info] [Coroutine] Stopping all coroutines (0 running)
+[16-10-2026 02:00:03.068] [Info] [AssetManager] Clearing 6 assets and 1 mounts
+[16-10-2026 02:00:03.070] [Info] [Atlas] Clearing renderer atlas: 22 textures, 4 pages
+[16-10-2026 02:00:03.075] [Info] [Window] Disposing SDL window and renderer
+[16-10-2026 02:00:03.093] [Info] [Window] Window disposed
+[16-10-2026 02:04:19.667] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[16-10-2026 02:04:19.672] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[16-10-2026 02:04:19.672] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[16-10-2026 02:04:19.672] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[16-10-2026 02:04:19.672] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[16-10-2026 02:04:19.672] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[16-10-2026 02:04:19.677] [Info] Version: 2.2.1.0  Hash: 1268E6444153F852
+[16-10-2026 02:04:19.677] [Info] 
+[16-10-2026 02:04:19.680] [Info] [Window] Creating SDL window: 1280x720 'Game' Mode=Windowed VSync=True
+[16-10-2026 02:04:19.876] [Info] [Platform] SDL video backend:
+[16-10-2026 02:04:19.876] [Info] [Platform] Name: windows
+[16-10-2026 02:04:19.877] [Info] [Platform] Backend: Windows
+[16-10-2026 02:04:19.877] [Info] [Platform] Window capabilities:
+[16-10-2026 02:04:19.877] [Info] [Platform] CanPositionWindow: True
+[16-10-2026 02:04:19.877] [Info] [Platform] CanSelectWindowedDisplay: True
+[16-10-2026 02:04:19.877] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[16-10-2026 02:04:19.877] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[16-10-2026 02:04:19.877] [Info] [Platform] SupportsDisplayEnumeration: True
+[16-10-2026 02:04:19.877] [Info] [Platform] SupportsDisplayModes: True
+[16-10-2026 02:04:19.877] [Info] [Platform] SupportsContentScale: True
+[16-10-2026 02:04:19.877] [Info] [Platform] UsesCompositorWindowPlacement: False
+[16-10-2026 02:04:20.231] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[16-10-2026 02:04:20.233] [Info] [AssetManager] Initialized with 1 mounts
+[16-10-2026 02:04:20.247] [Info] [Game] Default font loaded successfully
+[16-10-2026 02:04:20.247] [Info] VOID setting up Application folders...
+[16-10-2026 02:04:20.247] [Info] Application folders ready
+[16-10-2026 02:04:20.350] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[16-10-2026 02:04:22.736] [Info] [Coroutine] Stopping all coroutines (0 running)
+[16-10-2026 02:04:22.740] [Info] [AssetManager] Clearing 6 assets and 1 mounts
+[16-10-2026 02:04:22.743] [Info] [Atlas] Clearing renderer atlas: 22 textures, 4 pages
+[16-10-2026 02:04:22.747] [Info] [Window] Disposing SDL window and renderer
+[16-10-2026 02:04:22.767] [Info] [Window] Window disposed
+[16-10-2026 02:04:38.360] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[16-10-2026 02:04:38.365] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[16-10-2026 02:04:38.365] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[16-10-2026 02:04:38.365] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[16-10-2026 02:04:38.365] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[16-10-2026 02:04:38.365] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[16-10-2026 02:04:38.370] [Info] Version: 2.2.1.0  Hash: 1268E6444153F852
+[16-10-2026 02:04:38.371] [Info] 
+[16-10-2026 02:04:38.374] [Info] [Window] Creating SDL window: 1280x720 'Game' Mode=Windowed VSync=True
+[16-10-2026 02:04:38.583] [Info] [Platform] SDL video backend:
+[16-10-2026 02:04:38.583] [Info] [Platform] Name: windows
+[16-10-2026 02:04:38.583] [Info] [Platform] Backend: Windows
+[16-10-2026 02:04:38.583] [Info] [Platform] Window capabilities:
+[16-10-2026 02:04:38.583] [Info] [Platform] CanPositionWindow: True
+[16-10-2026 02:04:38.583] [Info] [Platform] CanSelectWindowedDisplay: True
+[16-10-2026 02:04:38.583] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[16-10-2026 02:04:38.583] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[16-10-2026 02:04:38.583] [Info] [Platform] SupportsDisplayEnumeration: True
+[16-10-2026 02:04:38.583] [Info] [Platform] SupportsDisplayModes: True
+[16-10-2026 02:04:38.583] [Info] [Platform] SupportsContentScale: True
+[16-10-2026 02:04:38.584] [Info] [Platform] UsesCompositorWindowPlacement: False
+[16-10-2026 02:04:38.938] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[16-10-2026 02:04:38.940] [Info] [AssetManager] Initialized with 1 mounts
+[16-10-2026 02:04:38.954] [Info] [Game] Default font loaded successfully
+[16-10-2026 02:04:38.954] [Info] VOID setting up Application folders...
+[16-10-2026 02:04:38.955] [Info] Application folders ready
+[16-10-2026 02:04:39.052] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[16-10-2026 02:06:59.812] [Info] [Coroutine] Stopping all coroutines (0 running)
+[16-10-2026 02:06:59.816] [Info] [AssetManager] Clearing 6 assets and 1 mounts
+[16-10-2026 02:06:59.819] [Info] [Atlas] Clearing renderer atlas: 22 textures, 4 pages
+[16-10-2026 02:06:59.823] [Info] [Window] Disposing SDL window and renderer
+[16-10-2026 02:06:59.846] [Info] [Window] Window disposed
+[16-10-2026 03:23:10.620] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[16-10-2026 03:23:10.624] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[16-10-2026 03:23:10.624] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[16-10-2026 03:23:10.624] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[16-10-2026 03:23:10.624] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[16-10-2026 03:23:10.624] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[16-10-2026 03:23:10.629] [Info] Version: 2.2.1.0  Hash: 1268E6444153F852
+[16-10-2026 03:23:10.629] [Info] 
+[16-10-2026 03:23:10.632] [Info] [Window] Creating SDL window: 1280x720 'Game' Mode=Windowed VSync=True
+[16-10-2026 03:23:10.843] [Info] [Platform] SDL video backend:
+[16-10-2026 03:23:10.843] [Info] [Platform] Name: windows
+[16-10-2026 03:23:10.843] [Info] [Platform] Backend: Windows
+[16-10-2026 03:23:10.843] [Info] [Platform] Window capabilities:
+[16-10-2026 03:23:10.843] [Info] [Platform] CanPositionWindow: True
+[16-10-2026 03:23:10.843] [Info] [Platform] CanSelectWindowedDisplay: True
+[16-10-2026 03:23:10.843] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[16-10-2026 03:23:10.843] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[16-10-2026 03:23:10.843] [Info] [Platform] SupportsDisplayEnumeration: True
+[16-10-2026 03:23:10.844] [Info] [Platform] SupportsDisplayModes: True
+[16-10-2026 03:23:10.844] [Info] [Platform] SupportsContentScale: True
+[16-10-2026 03:23:10.844] [Info] [Platform] UsesCompositorWindowPlacement: False
+[16-10-2026 03:23:11.236] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[16-10-2026 03:23:11.239] [Info] [AssetManager] Initialized with 1 mounts
+[16-10-2026 03:23:11.253] [Info] [Game] Default font loaded successfully
+[16-10-2026 03:23:11.253] [Info] VOID setting up Application folders...
+[16-10-2026 03:23:11.254] [Info] Application folders ready
+[16-10-2026 03:23:11.356] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[16-10-2026 03:23:21.353] [Info] [Coroutine] Stopping all coroutines (0 running)
+[16-10-2026 03:23:21.357] [Info] [AssetManager] Clearing 6 assets and 1 mounts
+[16-10-2026 03:23:21.359] [Info] [Atlas] Clearing renderer atlas: 22 textures, 4 pages
+[16-10-2026 03:23:21.365] [Info] [Window] Disposing SDL window and renderer
+[16-10-2026 03:23:21.390] [Info] [Window] Window disposed
+[16-10-2026 03:24:15.678] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[16-10-2026 03:24:15.683] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[16-10-2026 03:24:15.683] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[16-10-2026 03:24:15.683] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[16-10-2026 03:24:15.683] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[16-10-2026 03:24:15.683] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[16-10-2026 03:24:15.688] [Info] Version: 2.2.1.0  Hash: 1268E6444153F852
+[16-10-2026 03:24:15.688] [Info] 
+[16-10-2026 03:24:15.691] [Info] [Window] Creating SDL window: 1280x720 'Game' Mode=Windowed VSync=True
+[16-10-2026 03:24:15.891] [Info] [Platform] SDL video backend:
+[16-10-2026 03:24:15.891] [Info] [Platform] Name: windows
+[16-10-2026 03:24:15.891] [Info] [Platform] Backend: Windows
+[16-10-2026 03:24:15.891] [Info] [Platform] Window capabilities:
+[16-10-2026 03:24:15.891] [Info] [Platform] CanPositionWindow: True
+[16-10-2026 03:24:15.891] [Info] [Platform] CanSelectWindowedDisplay: True
+[16-10-2026 03:24:15.891] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[16-10-2026 03:24:15.891] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[16-10-2026 03:24:15.891] [Info] [Platform] SupportsDisplayEnumeration: True
+[16-10-2026 03:24:15.891] [Info] [Platform] SupportsDisplayModes: True
+[16-10-2026 03:24:15.891] [Info] [Platform] SupportsContentScale: True
+[16-10-2026 03:24:15.891] [Info] [Platform] UsesCompositorWindowPlacement: False
+[16-10-2026 03:24:16.242] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[16-10-2026 03:24:16.244] [Info] [AssetManager] Initialized with 1 mounts
+[16-10-2026 03:24:16.257] [Info] [Game] Default font loaded successfully
+[16-10-2026 03:24:16.257] [Info] VOID setting up Application folders...
+[16-10-2026 03:24:16.258] [Info] Application folders ready
+[16-10-2026 03:24:16.361] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[16-10-2026 03:24:39.950] [Info] [Coroutine] Stopping all coroutines (0 running)
+[16-10-2026 03:24:39.955] [Info] [AssetManager] Clearing 6 assets and 1 mounts
+[16-10-2026 03:24:39.957] [Info] [Atlas] Clearing renderer atlas: 22 textures, 4 pages
+[16-10-2026 03:24:39.962] [Info] [Window] Disposing SDL window and renderer
+[16-10-2026 03:24:39.985] [Info] [Window] Window disposed
+[16-10-2026 03:25:48.090] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[16-10-2026 03:25:48.094] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[16-10-2026 03:25:48.094] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[16-10-2026 03:25:48.094] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[16-10-2026 03:25:48.094] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[16-10-2026 03:25:48.094] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[16-10-2026 03:25:48.099] [Info] Version: 2.2.1.0  Hash: 1268E6444153F852
+[16-10-2026 03:25:48.099] [Info] 
+[16-10-2026 03:25:48.102] [Info] [Window] Creating SDL window: 1280x720 'Game' Mode=Windowed VSync=True
+[16-10-2026 03:25:48.297] [Info] [Platform] SDL video backend:
+[16-10-2026 03:25:48.297] [Info] [Platform] Name: windows
+[16-10-2026 03:25:48.297] [Info] [Platform] Backend: Windows
+[16-10-2026 03:25:48.297] [Info] [Platform] Window capabilities:
+[16-10-2026 03:25:48.297] [Info] [Platform] CanPositionWindow: True
+[16-10-2026 03:25:48.297] [Info] [Platform] CanSelectWindowedDisplay: True
+[16-10-2026 03:25:48.297] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[16-10-2026 03:25:48.297] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[16-10-2026 03:25:48.297] [Info] [Platform] SupportsDisplayEnumeration: True
+[16-10-2026 03:25:48.297] [Info] [Platform] SupportsDisplayModes: True
+[16-10-2026 03:25:48.298] [Info] [Platform] SupportsContentScale: True
+[16-10-2026 03:25:48.298] [Info] [Platform] UsesCompositorWindowPlacement: False
+[16-10-2026 03:25:48.643] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[16-10-2026 03:25:48.645] [Info] [AssetManager] Initialized with 1 mounts
+[16-10-2026 03:25:48.658] [Info] [Game] Default font loaded successfully
+[16-10-2026 03:25:48.658] [Info] VOID setting up Application folders...
+[16-10-2026 03:25:48.659] [Info] Application folders ready
+[16-10-2026 03:25:48.760] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[16-10-2026 03:25:50.496] [Info] [Coroutine] Stopping all coroutines (0 running)
+[16-10-2026 03:25:50.501] [Info] [AssetManager] Clearing 6 assets and 1 mounts
+[16-10-2026 03:25:50.504] [Info] [Atlas] Clearing renderer atlas: 22 textures, 4 pages
+[16-10-2026 03:25:50.509] [Info] [Window] Disposing SDL window and renderer
+[16-10-2026 03:25:50.529] [Info] [Window] Window disposed

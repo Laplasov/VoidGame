@@ -1,0 +1,345 @@
+[26-09-2026 19:23:53.211] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[26-09-2026 19:23:53.216] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[26-09-2026 19:23:53.216] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[26-09-2026 19:23:53.216] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[26-09-2026 19:23:53.216] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[26-09-2026 19:23:53.216] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[26-09-2026 19:23:53.234] [Info] Version: 2.1.1.0  Hash: 125F856061FEC5A7
+[26-09-2026 19:23:53.234] [Info] 
+[26-09-2026 19:23:53.252] [Info] [Window] Creating SDL window: 1280x720 'My Game' Mode=Windowed VSync=True
+[26-09-2026 19:23:53.967] [Info] [Platform] SDL video backend:
+[26-09-2026 19:23:53.967] [Info] [Platform] Name: windows
+[26-09-2026 19:23:53.967] [Info] [Platform] Backend: Windows
+[26-09-2026 19:23:53.967] [Info] [Platform] Window capabilities:
+[26-09-2026 19:23:53.967] [Info] [Platform] CanPositionWindow: True
+[26-09-2026 19:23:53.967] [Info] [Platform] CanSelectWindowedDisplay: True
+[26-09-2026 19:23:53.967] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[26-09-2026 19:23:53.967] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[26-09-2026 19:23:53.967] [Info] [Platform] SupportsDisplayEnumeration: True
+[26-09-2026 19:23:53.967] [Info] [Platform] SupportsDisplayModes: True
+[26-09-2026 19:23:53.967] [Info] [Platform] SupportsContentScale: True
+[26-09-2026 19:23:53.967] [Info] [Platform] UsesCompositorWindowPlacement: False
+[26-09-2026 19:23:55.173] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[26-09-2026 19:23:55.181] [Info] [AssetManager] Initialized with 1 mounts
+[26-09-2026 19:23:55.195] [Info] [Game] Default font loaded successfully
+[26-09-2026 19:23:55.196] [Info] VOID setting up Application folders...
+[26-09-2026 19:23:55.196] [Info] Application folders ready
+[26-09-2026 19:23:55.341] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[26-09-2026 22:25:19.554] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[26-09-2026 22:25:19.558] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[26-09-2026 22:25:19.558] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[26-09-2026 22:25:19.558] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[26-09-2026 22:25:19.558] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[26-09-2026 22:25:19.558] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[26-09-2026 22:25:19.614] [Info] Version: 2.1.1.0  Hash: 125F856061FEC5A7
+[26-09-2026 22:25:19.614] [Info] 
+[26-09-2026 22:25:19.618] [Info] [Window] Creating SDL window: 1280x720 'My Game' Mode=Windowed VSync=True
+[26-09-2026 22:25:19.934] [Info] [Platform] SDL video backend:
+[26-09-2026 22:25:19.934] [Info] [Platform] Name: windows
+[26-09-2026 22:25:19.934] [Info] [Platform] Backend: Windows
+[26-09-2026 22:25:19.934] [Info] [Platform] Window capabilities:
+[26-09-2026 22:25:19.934] [Info] [Platform] CanPositionWindow: True
+[26-09-2026 22:25:19.934] [Info] [Platform] CanSelectWindowedDisplay: True
+[26-09-2026 22:25:19.934] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[26-09-2026 22:25:19.934] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[26-09-2026 22:25:19.934] [Info] [Platform] SupportsDisplayEnumeration: True
+[26-09-2026 22:25:19.934] [Info] [Platform] SupportsDisplayModes: True
+[26-09-2026 22:25:19.934] [Info] [Platform] SupportsContentScale: True
+[26-09-2026 22:25:19.934] [Info] [Platform] UsesCompositorWindowPlacement: False
+[26-09-2026 22:25:20.547] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[26-09-2026 22:25:20.549] [Info] [AssetManager] Initialized with 1 mounts
+[26-09-2026 22:25:20.563] [Info] [Game] Default font loaded successfully
+[26-09-2026 22:25:20.563] [Info] VOID setting up Application folders...
+[26-09-2026 22:25:20.564] [Info] Application folders ready
+[26-09-2026 22:25:20.709] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[26-09-2026 22:25:23.383] [Info] [Coroutine] Stopping all coroutines (0 running)
+[26-09-2026 22:25:23.387] [Info] [AssetManager] Clearing 2 assets and 1 mounts
+[26-09-2026 22:25:23.390] [Info] [Atlas] Clearing renderer atlas: 0 textures, 4 pages
+[26-09-2026 22:25:23.392] [Info] [Window] Disposing SDL window and renderer
+[26-09-2026 22:25:23.424] [Info] [Window] Window disposed
+[26-09-2026 22:31:20.319] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[26-09-2026 22:31:20.322] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[26-09-2026 22:31:20.322] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[26-09-2026 22:31:20.322] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[26-09-2026 22:31:20.322] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[26-09-2026 22:31:20.322] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[26-09-2026 22:31:20.333] [Info] Version: 2.1.1.0  Hash: 125F856061FEC5A7
+[26-09-2026 22:31:20.333] [Info] 
+[26-09-2026 22:31:20.336] [Info] [Window] Creating SDL window: 1280x720 'My Game' Mode=Windowed VSync=True
+[26-09-2026 22:31:20.565] [Info] [Platform] SDL video backend:
+[26-09-2026 22:31:20.565] [Info] [Platform] Name: windows
+[26-09-2026 22:31:20.565] [Info] [Platform] Backend: Windows
+[26-09-2026 22:31:20.565] [Info] [Platform] Window capabilities:
+[26-09-2026 22:31:20.565] [Info] [Platform] CanPositionWindow: True
+[26-09-2026 22:31:20.565] [Info] [Platform] CanSelectWindowedDisplay: True
+[26-09-2026 22:31:20.565] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[26-09-2026 22:31:20.565] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[26-09-2026 22:31:20.565] [Info] [Platform] SupportsDisplayEnumeration: True
+[26-09-2026 22:31:20.565] [Info] [Platform] SupportsDisplayModes: True
+[26-09-2026 22:31:20.565] [Info] [Platform] SupportsContentScale: True
+[26-09-2026 22:31:20.566] [Info] [Platform] UsesCompositorWindowPlacement: False
+[26-09-2026 22:31:20.974] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[26-09-2026 22:31:20.976] [Info] [AssetManager] Initialized with 1 mounts
+[26-09-2026 22:31:20.990] [Info] [Game] Default font loaded successfully
+[26-09-2026 22:31:20.990] [Info] VOID setting up Application folders...
+[26-09-2026 22:31:20.990] [Info] Application folders ready
+[26-09-2026 22:31:21.064] [Info] Layer 'Path' type=IntGrid tilesetId=30 instanceCount=256 visible=True
+[26-09-2026 22:31:21.064] [Info] Layer 'Ground' type=IntGrid tilesetId=1 instanceCount=256 visible=True
+[26-09-2026 22:31:21.084] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[26-09-2026 22:33:03.801] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[26-09-2026 22:33:03.805] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[26-09-2026 22:33:03.805] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[26-09-2026 22:33:03.805] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[26-09-2026 22:33:03.805] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[26-09-2026 22:33:03.805] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[26-09-2026 22:33:03.815] [Info] Version: 2.1.1.0  Hash: 125F856061FEC5A7
+[26-09-2026 22:33:03.815] [Info] 
+[26-09-2026 22:33:03.818] [Info] [Window] Creating SDL window: 1280x720 'My Game' Mode=Windowed VSync=True
+[26-09-2026 22:33:04.048] [Info] [Platform] SDL video backend:
+[26-09-2026 22:33:04.048] [Info] [Platform] Name: windows
+[26-09-2026 22:33:04.048] [Info] [Platform] Backend: Windows
+[26-09-2026 22:33:04.048] [Info] [Platform] Window capabilities:
+[26-09-2026 22:33:04.048] [Info] [Platform] CanPositionWindow: True
+[26-09-2026 22:33:04.048] [Info] [Platform] CanSelectWindowedDisplay: True
+[26-09-2026 22:33:04.048] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[26-09-2026 22:33:04.048] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[26-09-2026 22:33:04.049] [Info] [Platform] SupportsDisplayEnumeration: True
+[26-09-2026 22:33:04.049] [Info] [Platform] SupportsDisplayModes: True
+[26-09-2026 22:33:04.049] [Info] [Platform] SupportsContentScale: True
+[26-09-2026 22:33:04.049] [Info] [Platform] UsesCompositorWindowPlacement: False
+[26-09-2026 22:33:04.449] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[26-09-2026 22:33:04.451] [Info] [AssetManager] Initialized with 1 mounts
+[26-09-2026 22:33:04.465] [Info] [Game] Default font loaded successfully
+[26-09-2026 22:33:04.465] [Info] VOID setting up Application folders...
+[26-09-2026 22:33:04.466] [Info] Application folders ready
+[26-09-2026 22:33:04.537] [Info] Layer 'Path' type=IntGrid tilesetId=30 instanceCount=256 visible=True
+[26-09-2026 22:33:04.537] [Info] Layer 'Ground' type=IntGrid tilesetId=1 instanceCount=256 visible=True
+[26-09-2026 22:33:04.537] [Info] Total tileset textures cached: 2
+[26-09-2026 22:33:04.558] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[26-09-2026 22:34:57.327] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[26-09-2026 22:34:57.331] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[26-09-2026 22:34:57.331] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[26-09-2026 22:34:57.331] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[26-09-2026 22:34:57.331] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[26-09-2026 22:34:57.331] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[26-09-2026 22:34:57.341] [Info] Version: 2.1.1.0  Hash: 125F856061FEC5A7
+[26-09-2026 22:34:57.341] [Info] 
+[26-09-2026 22:34:57.344] [Info] [Window] Creating SDL window: 1280x720 'My Game' Mode=Windowed VSync=True
+[26-09-2026 22:34:57.581] [Info] [Platform] SDL video backend:
+[26-09-2026 22:34:57.581] [Info] [Platform] Name: windows
+[26-09-2026 22:34:57.581] [Info] [Platform] Backend: Windows
+[26-09-2026 22:34:57.581] [Info] [Platform] Window capabilities:
+[26-09-2026 22:34:57.581] [Info] [Platform] CanPositionWindow: True
+[26-09-2026 22:34:57.581] [Info] [Platform] CanSelectWindowedDisplay: True
+[26-09-2026 22:34:57.581] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[26-09-2026 22:34:57.582] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[26-09-2026 22:34:57.582] [Info] [Platform] SupportsDisplayEnumeration: True
+[26-09-2026 22:34:57.582] [Info] [Platform] SupportsDisplayModes: True
+[26-09-2026 22:34:57.582] [Info] [Platform] SupportsContentScale: True
+[26-09-2026 22:34:57.582] [Info] [Platform] UsesCompositorWindowPlacement: False
+[26-09-2026 22:34:57.972] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[26-09-2026 22:34:57.974] [Info] [AssetManager] Initialized with 1 mounts
+[26-09-2026 22:34:57.987] [Info] [Game] Default font loaded successfully
+[26-09-2026 22:34:57.988] [Info] VOID setting up Application folders...
+[26-09-2026 22:34:57.988] [Info] Application folders ready
+[26-09-2026 22:34:58.056] [Info] Layer 'Path' type=IntGrid tilesetId=30 instanceCount=256 visible=True
+[26-09-2026 22:34:58.056] [Info] Layer 'Ground' type=IntGrid tilesetId=1 instanceCount=256 visible=True
+[26-09-2026 22:34:58.056] [Info] Total tileset textures cached: 2
+[26-09-2026 22:34:58.082] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[26-09-2026 22:35:00.288] [Info] [Coroutine] Stopping all coroutines (0 running)
+[26-09-2026 22:35:00.293] [Info] [AssetManager] Clearing 4 assets and 1 mounts
+[26-09-2026 22:35:00.296] [Info] [Atlas] Clearing renderer atlas: 1 textures, 4 pages
+[26-09-2026 22:35:00.299] [Info] [Window] Disposing SDL window and renderer
+[26-09-2026 22:35:00.322] [Info] [Window] Window disposed
+[26-09-2026 22:36:12.780] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[26-09-2026 22:36:12.785] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[26-09-2026 22:36:12.785] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[26-09-2026 22:36:12.785] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[26-09-2026 22:36:12.785] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[26-09-2026 22:36:12.785] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[26-09-2026 22:36:12.796] [Info] Version: 2.1.1.0  Hash: 125F856061FEC5A7
+[26-09-2026 22:36:12.796] [Info] 
+[26-09-2026 22:36:12.799] [Info] [Window] Creating SDL window: 1280x720 'My Game' Mode=Windowed VSync=True
+[26-09-2026 22:36:13.033] [Info] [Platform] SDL video backend:
+[26-09-2026 22:36:13.034] [Info] [Platform] Name: windows
+[26-09-2026 22:36:13.034] [Info] [Platform] Backend: Windows
+[26-09-2026 22:36:13.034] [Info] [Platform] Window capabilities:
+[26-09-2026 22:36:13.034] [Info] [Platform] CanPositionWindow: True
+[26-09-2026 22:36:13.034] [Info] [Platform] CanSelectWindowedDisplay: True
+[26-09-2026 22:36:13.034] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[26-09-2026 22:36:13.034] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[26-09-2026 22:36:13.034] [Info] [Platform] SupportsDisplayEnumeration: True
+[26-09-2026 22:36:13.034] [Info] [Platform] SupportsDisplayModes: True
+[26-09-2026 22:36:13.034] [Info] [Platform] SupportsContentScale: True
+[26-09-2026 22:36:13.034] [Info] [Platform] UsesCompositorWindowPlacement: False
+[26-09-2026 22:36:13.437] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[26-09-2026 22:36:13.439] [Info] [AssetManager] Initialized with 1 mounts
+[26-09-2026 22:36:13.453] [Info] [Game] Default font loaded successfully
+[26-09-2026 22:36:13.453] [Info] VOID setting up Application folders...
+[26-09-2026 22:36:13.454] [Info] Application folders ready
+[26-09-2026 22:36:13.523] [Info] Layer 'Path' type=IntGrid tilesetId=30 instanceCount=256 visible=True
+[26-09-2026 22:36:13.523] [Info] Layer 'Ground' type=IntGrid tilesetId=1 instanceCount=256 visible=True
+[26-09-2026 22:36:13.523] [Info] Total tileset textures cached: 2
+[26-09-2026 22:36:13.550] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[26-09-2026 22:36:13.595] [Fatal] [Game] Message: Sequence contains no elements
+[26-09-2026 22:36:13.639] [Fatal] [Game] Stack Trace:
+[26-09-2026 22:36:13.641] [Fatal] [Game]    at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at VoidGame.VoidGameGame.OnDraw(FrameTime frameTime) in D:\Code\Void\VoidGame\VoidGameGame.cs:line 70
+   at Void.Engine.Game.Run()
+   at Program.<Main>$(String[] args) in D:\Code\Void\VoidGame\Program.cs:line 40
+[26-09-2026 22:47:18.419] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[26-09-2026 22:47:18.423] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[26-09-2026 22:47:18.423] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[26-09-2026 22:47:18.423] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[26-09-2026 22:47:18.423] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[26-09-2026 22:47:18.423] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[26-09-2026 22:47:18.435] [Info] Version: 2.1.1.0  Hash: 125F856061FEC5A7
+[26-09-2026 22:47:18.435] [Info] 
+[26-09-2026 22:47:18.438] [Info] [Window] Creating SDL window: 1280x720 'My Game' Mode=Windowed VSync=True
+[26-09-2026 22:47:18.671] [Info] [Platform] SDL video backend:
+[26-09-2026 22:47:18.671] [Info] [Platform] Name: windows
+[26-09-2026 22:47:18.671] [Info] [Platform] Backend: Windows
+[26-09-2026 22:47:18.671] [Info] [Platform] Window capabilities:
+[26-09-2026 22:47:18.671] [Info] [Platform] CanPositionWindow: True
+[26-09-2026 22:47:18.671] [Info] [Platform] CanSelectWindowedDisplay: True
+[26-09-2026 22:47:18.671] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[26-09-2026 22:47:18.671] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[26-09-2026 22:47:18.671] [Info] [Platform] SupportsDisplayEnumeration: True
+[26-09-2026 22:47:18.671] [Info] [Platform] SupportsDisplayModes: True
+[26-09-2026 22:47:18.671] [Info] [Platform] SupportsContentScale: True
+[26-09-2026 22:47:18.672] [Info] [Platform] UsesCompositorWindowPlacement: False
+[26-09-2026 22:47:19.194] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[26-09-2026 22:47:19.196] [Info] [AssetManager] Initialized with 1 mounts
+[26-09-2026 22:47:19.210] [Info] [Game] Default font loaded successfully
+[26-09-2026 22:47:19.210] [Info] VOID setting up Application folders...
+[26-09-2026 22:47:19.211] [Info] Application folders ready
+[26-09-2026 22:47:19.306] [Info] Layer 'Path' type=IntGrid tilesetId=30 instanceCount=256 visible=True
+[26-09-2026 22:47:19.306] [Info] Layer 'Path_baked' type=Tiles tilesetId=30 instanceCount=103 visible=True
+[26-09-2026 22:47:19.306] [Info] Layer 'Ground' type=IntGrid tilesetId=1 instanceCount=256 visible=True
+[26-09-2026 22:47:19.306] [Info] Layer 'Ground_baked' type=Tiles tilesetId=1 instanceCount=256 visible=True
+[26-09-2026 22:47:19.306] [Info] Total tileset textures cached: 2
+[26-09-2026 22:47:19.325] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[26-09-2026 22:47:19.343] [Fatal] [Game] Message: Sequence contains no elements
+[26-09-2026 22:47:19.376] [Fatal] [Game] Stack Trace:
+[26-09-2026 22:47:19.379] [Fatal] [Game]    at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at VoidGame.VoidGameGame.OnDraw(FrameTime frameTime) in D:\Code\Void\VoidGame\VoidGameGame.cs:line 70
+   at Void.Engine.Game.Run()
+   at Program.<Main>$(String[] args) in D:\Code\Void\VoidGame\Program.cs:line 40
+[26-09-2026 22:50:26.463] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[26-09-2026 22:50:26.467] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[26-09-2026 22:50:26.467] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[26-09-2026 22:50:26.467] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[26-09-2026 22:50:26.467] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[26-09-2026 22:50:26.467] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[26-09-2026 22:50:26.478] [Info] Version: 2.1.1.0  Hash: 125F856061FEC5A7
+[26-09-2026 22:50:26.479] [Info] 
+[26-09-2026 22:50:26.482] [Info] [Window] Creating SDL window: 1280x720 'My Game' Mode=Windowed VSync=True
+[26-09-2026 22:50:26.725] [Info] [Platform] SDL video backend:
+[26-09-2026 22:50:26.725] [Info] [Platform] Name: windows
+[26-09-2026 22:50:26.725] [Info] [Platform] Backend: Windows
+[26-09-2026 22:50:26.725] [Info] [Platform] Window capabilities:
+[26-09-2026 22:50:26.725] [Info] [Platform] CanPositionWindow: True
+[26-09-2026 22:50:26.726] [Info] [Platform] CanSelectWindowedDisplay: True
+[26-09-2026 22:50:26.726] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[26-09-2026 22:50:26.726] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[26-09-2026 22:50:26.726] [Info] [Platform] SupportsDisplayEnumeration: True
+[26-09-2026 22:50:26.726] [Info] [Platform] SupportsDisplayModes: True
+[26-09-2026 22:50:26.726] [Info] [Platform] SupportsContentScale: True
+[26-09-2026 22:50:26.726] [Info] [Platform] UsesCompositorWindowPlacement: False
+[26-09-2026 22:50:27.151] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[26-09-2026 22:50:27.153] [Info] [AssetManager] Initialized with 1 mounts
+[26-09-2026 22:50:27.167] [Info] [Game] Default font loaded successfully
+[26-09-2026 22:50:27.167] [Info] VOID setting up Application folders...
+[26-09-2026 22:50:27.167] [Info] Application folders ready
+[26-09-2026 22:50:27.260] [Info] Layer 'Path' type=IntGrid tilesetId=30 instanceCount=256 visible=True
+[26-09-2026 22:50:27.260] [Info] Layer 'Path_baked' type=Tiles tilesetId=30 instanceCount=103 visible=True
+[26-09-2026 22:50:27.260] [Info] Layer 'Ground' type=IntGrid tilesetId=1 instanceCount=256 visible=True
+[26-09-2026 22:50:27.260] [Info] Layer 'Ground_baked' type=Tiles tilesetId=1 instanceCount=256 visible=True
+[26-09-2026 22:50:27.260] [Info] Total tileset textures cached: 2
+[26-09-2026 22:50:27.262] [Info] Layer 'Path' type=IntGrid tilesetId=30 tileInstances=0 intGridInstances=256
+[26-09-2026 22:50:27.262] [Info] Layer 'Path_baked' type=Tiles tilesetId=30 tileInstances=103 intGridInstances=0
+[26-09-2026 22:50:27.262] [Info] Layer 'Ground' type=IntGrid tilesetId=1 tileInstances=0 intGridInstances=256
+[26-09-2026 22:50:27.262] [Info] Layer 'Ground_baked' type=Tiles tilesetId=1 tileInstances=256 intGridInstances=0
+[26-09-2026 22:50:27.284] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[26-09-2026 22:50:27.302] [Fatal] [Game] Message: Sequence contains no elements
+[26-09-2026 22:50:27.335] [Fatal] [Game] Stack Trace:
+[26-09-2026 22:50:27.338] [Fatal] [Game]    at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at VoidGame.VoidGameGame.OnDraw(FrameTime frameTime) in D:\Code\Void\VoidGame\VoidGameGame.cs:line 75
+   at Void.Engine.Game.Run()
+   at Program.<Main>$(String[] args) in D:\Code\Void\VoidGame\Program.cs:line 40
+[26-09-2026 22:51:17.041] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[26-09-2026 22:51:17.045] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[26-09-2026 22:51:17.045] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[26-09-2026 22:51:17.045] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[26-09-2026 22:51:17.045] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[26-09-2026 22:51:17.045] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[26-09-2026 22:51:17.056] [Info] Version: 2.1.1.0  Hash: 125F856061FEC5A7
+[26-09-2026 22:51:17.056] [Info] 
+[26-09-2026 22:51:17.059] [Info] [Window] Creating SDL window: 1280x720 'My Game' Mode=Windowed VSync=True
+[26-09-2026 22:51:17.292] [Info] [Platform] SDL video backend:
+[26-09-2026 22:51:17.292] [Info] [Platform] Name: windows
+[26-09-2026 22:51:17.293] [Info] [Platform] Backend: Windows
+[26-09-2026 22:51:17.293] [Info] [Platform] Window capabilities:
+[26-09-2026 22:51:17.293] [Info] [Platform] CanPositionWindow: True
+[26-09-2026 22:51:17.293] [Info] [Platform] CanSelectWindowedDisplay: True
+[26-09-2026 22:51:17.293] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[26-09-2026 22:51:17.293] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[26-09-2026 22:51:17.293] [Info] [Platform] SupportsDisplayEnumeration: True
+[26-09-2026 22:51:17.293] [Info] [Platform] SupportsDisplayModes: True
+[26-09-2026 22:51:17.293] [Info] [Platform] SupportsContentScale: True
+[26-09-2026 22:51:17.293] [Info] [Platform] UsesCompositorWindowPlacement: False
+[26-09-2026 22:51:17.814] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[26-09-2026 22:51:17.816] [Info] [AssetManager] Initialized with 1 mounts
+[26-09-2026 22:51:17.831] [Info] [Game] Default font loaded successfully
+[26-09-2026 22:51:17.831] [Info] VOID setting up Application folders...
+[26-09-2026 22:51:17.831] [Info] Application folders ready
+[26-09-2026 22:51:17.931] [Info] Layer 'Path' type=IntGrid tilesetId=30 instanceCount=256 visible=True
+[26-09-2026 22:51:17.931] [Info] Layer 'Path_baked' type=Tiles tilesetId=30 instanceCount=103 visible=True
+[26-09-2026 22:51:17.931] [Info] Layer 'Ground' type=IntGrid tilesetId=1 instanceCount=256 visible=True
+[26-09-2026 22:51:17.931] [Info] Layer 'Ground_baked' type=Tiles tilesetId=1 instanceCount=256 visible=True
+[26-09-2026 22:51:17.931] [Info] Total tileset textures cached: 2
+[26-09-2026 22:51:17.933] [Info] Layer 'Path' type=IntGrid tilesetId=30 tileInstances=0 intGridInstances=256
+[26-09-2026 22:51:17.934] [Info] Layer 'Path_baked' type=Tiles tilesetId=30 tileInstances=103 intGridInstances=0
+[26-09-2026 22:51:17.934] [Info] Layer 'Ground' type=IntGrid tilesetId=1 tileInstances=0 intGridInstances=256
+[26-09-2026 22:51:17.934] [Info] Layer 'Ground_baked' type=Tiles tilesetId=1 tileInstances=256 intGridInstances=0
+[26-09-2026 22:51:17.954] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[26-09-2026 22:51:22.627] [Info] [Coroutine] Stopping all coroutines (0 running)
+[26-09-2026 22:51:22.631] [Info] [AssetManager] Clearing 4 assets and 1 mounts
+[26-09-2026 22:51:22.634] [Info] [Atlas] Clearing renderer atlas: 11 textures, 4 pages
+[26-09-2026 22:51:22.638] [Info] [Window] Disposing SDL window and renderer
+[26-09-2026 22:51:22.670] [Info] [Window] Window disposed
+[26-09-2026 23:18:08.286] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[26-09-2026 23:18:08.290] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[26-09-2026 23:18:08.290] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[26-09-2026 23:18:08.290] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[26-09-2026 23:18:08.290] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[26-09-2026 23:18:08.290] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[26-09-2026 23:18:08.301] [Info] Version: 2.1.1.0  Hash: 125F856061FEC5A7
+[26-09-2026 23:18:08.301] [Info] 
+[26-09-2026 23:18:08.304] [Info] [Window] Creating SDL window: 1280x720 'My Game' Mode=Windowed VSync=True
+[26-09-2026 23:18:08.551] [Info] [Platform] SDL video backend:
+[26-09-2026 23:18:08.551] [Info] [Platform] Name: windows
+[26-09-2026 23:18:08.552] [Info] [Platform] Backend: Windows
+[26-09-2026 23:18:08.552] [Info] [Platform] Window capabilities:
+[26-09-2026 23:18:08.552] [Info] [Platform] CanPositionWindow: True
+[26-09-2026 23:18:08.552] [Info] [Platform] CanSelectWindowedDisplay: True
+[26-09-2026 23:18:08.552] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[26-09-2026 23:18:08.552] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[26-09-2026 23:18:08.552] [Info] [Platform] SupportsDisplayEnumeration: True
+[26-09-2026 23:18:08.552] [Info] [Platform] SupportsDisplayModes: True
+[26-09-2026 23:18:08.552] [Info] [Platform] SupportsContentScale: True
+[26-09-2026 23:18:08.552] [Info] [Platform] UsesCompositorWindowPlacement: False
+[26-09-2026 23:18:09.035] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[26-09-2026 23:18:09.039] [Info] [AssetManager] Initialized with 1 mounts
+[26-09-2026 23:18:09.060] [Info] [Game] Default font loaded successfully
+[26-09-2026 23:18:09.060] [Info] VOID setting up Application folders...
+[26-09-2026 23:18:09.061] [Info] Application folders ready
+[26-09-2026 23:18:09.162] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[26-09-2026 23:18:28.993] [Info] [Coroutine] Stopping all coroutines (0 running)
+[26-09-2026 23:18:28.998] [Info] [AssetManager] Clearing 4 assets and 1 mounts
+[26-09-2026 23:18:29.000] [Info] [Atlas] Clearing renderer atlas: 11 textures, 4 pages
+[26-09-2026 23:18:29.003] [Info] [Window] Disposing SDL window and renderer
+[26-09-2026 23:18:29.030] [Info] [Window] Window disposed

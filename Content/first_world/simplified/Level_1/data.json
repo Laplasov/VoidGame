@@ -1,0 +1,73 @@
+{
+	"identifier": "Level_1",
+	"uniqueIdentifer": "b8239f50-96d0-11f1-804b-b59f74439995",
+	"x": 256,
+	"y": 0,
+	"width": 256,
+	"height": 256,
+	"bgColor": "#696A79",
+	"neighbourLevels": [
+		{
+			"levelIid": "111f77b0-96d0-11f1-a9b7-012badf20471",
+			"dir": "w"
+		}
+	],
+	"customFields" : {},
+	"layers": [
+		"Light_grass.png",
+		"Stone.png",
+		"Dirty_ground.png"
+	],
+	"entities": {
+		"Door": [
+			{
+				"id": "Door",
+				"iid": "5d7e2700-96d0-11f1-804b-11f1eb8f8798",
+				"layer": "Player",
+				"x": 16,
+				"y": 176,
+				"width": 32,
+				"height": 32,
+				"color": 6539085,
+				"customFields": {
+					"Entity_ref": {
+						"entityIid": "5b34d340-96d0-11f1-804b-c9a26180906d",
+						"layerIid": "8d869d70-96d0-11f1-804b-0bdbcbb4cb08",
+						"levelIid": "111f77b0-96d0-11f1-a9b7-012badf20471",
+						"worldIid": "111f2990-96d0-11f1-a9b7-cd670f5ea0ce"
+					}
+				}
+			}
+		],
+		"NPC": [
+			{
+				"id": "NPC",
+				"iid": "d34ab580-96d0-11f1-804b-8f9abc04ffb8",
+				"layer": "Player",
+				"x": 160,
+				"y": 96,
+				"width": 32,
+				"height": 32,
+				"color": 14120515,
+				"customFields": {
+					"Dialog": [],
+					"Tile": {
+						"tilesetUid": 135,
+						"x": 320,
+						"y": 160,
+						"w": 32,
+						"h": 32
+					},
+					"Multilines": "ffffffffffffff",
+					"Sprite": {
+						"tilesetUid": 135,
+						"x": 288,
+						"y": 160,
+						"w": 32,
+						"h": 32
+					}
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,645 @@
+[29-09-2026 06:18:39.397] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[29-09-2026 06:18:39.401] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[29-09-2026 06:18:39.401] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[29-09-2026 06:18:39.401] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[29-09-2026 06:18:39.401] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[29-09-2026 06:18:39.401] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[29-09-2026 06:18:39.430] [Info] Version: 2.1.1.0  Hash: 125F856061FEC5A7
+[29-09-2026 06:18:39.430] [Info] 
+[29-09-2026 06:18:39.441] [Info] [Window] Creating SDL window: 1280x720 'My Game' Mode=Windowed VSync=True
+[29-09-2026 06:18:40.044] [Info] [Platform] SDL video backend:
+[29-09-2026 06:18:40.044] [Info] [Platform] Name: windows
+[29-09-2026 06:18:40.044] [Info] [Platform] Backend: Windows
+[29-09-2026 06:18:40.044] [Info] [Platform] Window capabilities:
+[29-09-2026 06:18:40.044] [Info] [Platform] CanPositionWindow: True
+[29-09-2026 06:18:40.044] [Info] [Platform] CanSelectWindowedDisplay: True
+[29-09-2026 06:18:40.045] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[29-09-2026 06:18:40.045] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[29-09-2026 06:18:40.045] [Info] [Platform] SupportsDisplayEnumeration: True
+[29-09-2026 06:18:40.045] [Info] [Platform] SupportsDisplayModes: True
+[29-09-2026 06:18:40.045] [Info] [Platform] SupportsContentScale: True
+[29-09-2026 06:18:40.045] [Info] [Platform] UsesCompositorWindowPlacement: False
+[29-09-2026 06:18:41.170] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[29-09-2026 06:18:41.172] [Info] [AssetManager] Initialized with 1 mounts
+[29-09-2026 06:18:41.187] [Info] [Game] Default font loaded successfully
+[29-09-2026 06:18:41.187] [Info] VOID setting up Application folders...
+[29-09-2026 06:18:41.197] [Info] Application folders ready
+[29-09-2026 06:18:41.409] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[29-09-2026 06:18:44.431] [Info] [Coroutine] Stopping all coroutines (0 running)
+[29-09-2026 06:18:44.434] [Info] [AssetManager] Clearing 5 assets and 1 mounts
+[29-09-2026 06:18:44.437] [Info] [Atlas] Clearing renderer atlas: 20 textures, 4 pages
+[29-09-2026 06:18:44.441] [Info] [Window] Disposing SDL window and renderer
+[29-09-2026 06:18:44.480] [Info] [Window] Window disposed
+[29-09-2026 06:19:02.587] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[29-09-2026 06:19:02.591] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[29-09-2026 06:19:02.591] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[29-09-2026 06:19:02.591] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[29-09-2026 06:19:02.591] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[29-09-2026 06:19:02.591] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[29-09-2026 06:19:02.602] [Info] Version: 2.1.1.0  Hash: 125F856061FEC5A7
+[29-09-2026 06:19:02.602] [Info] 
+[29-09-2026 06:19:02.605] [Info] [Window] Creating SDL window: 1280x720 'My Game' Mode=Windowed VSync=True
+[29-09-2026 06:19:02.847] [Info] [Platform] SDL video backend:
+[29-09-2026 06:19:02.847] [Info] [Platform] Name: windows
+[29-09-2026 06:19:02.847] [Info] [Platform] Backend: Windows
+[29-09-2026 06:19:02.847] [Info] [Platform] Window capabilities:
+[29-09-2026 06:19:02.847] [Info] [Platform] CanPositionWindow: True
+[29-09-2026 06:19:02.847] [Info] [Platform] CanSelectWindowedDisplay: True
+[29-09-2026 06:19:02.847] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[29-09-2026 06:19:02.847] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[29-09-2026 06:19:02.847] [Info] [Platform] SupportsDisplayEnumeration: True
+[29-09-2026 06:19:02.847] [Info] [Platform] SupportsDisplayModes: True
+[29-09-2026 06:19:02.847] [Info] [Platform] SupportsContentScale: True
+[29-09-2026 06:19:02.847] [Info] [Platform] UsesCompositorWindowPlacement: False
+[29-09-2026 06:19:03.251] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[29-09-2026 06:19:03.253] [Info] [AssetManager] Initialized with 1 mounts
+[29-09-2026 06:19:03.267] [Info] [Game] Default font loaded successfully
+[29-09-2026 06:19:03.267] [Info] VOID setting up Application folders...
+[29-09-2026 06:19:03.267] [Info] Application folders ready
+[29-09-2026 06:19:03.420] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[29-09-2026 06:19:11.588] [Info] [Coroutine] Stopping all coroutines (0 running)
+[29-09-2026 06:19:11.593] [Info] [AssetManager] Clearing 5 assets and 1 mounts
+[29-09-2026 06:19:11.596] [Info] [Atlas] Clearing renderer atlas: 20 textures, 4 pages
+[29-09-2026 06:19:11.599] [Info] [Window] Disposing SDL window and renderer
+[29-09-2026 06:19:11.621] [Info] [Window] Window disposed
+[29-09-2026 06:19:23.301] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[29-09-2026 06:19:23.305] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[29-09-2026 06:19:23.305] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[29-09-2026 06:19:23.305] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[29-09-2026 06:19:23.305] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[29-09-2026 06:19:23.305] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[29-09-2026 06:19:23.318] [Info] Version: 2.1.1.0  Hash: 125F856061FEC5A7
+[29-09-2026 06:19:23.318] [Info] 
+[29-09-2026 06:19:23.321] [Info] [Window] Creating SDL window: 1280x720 'My Game' Mode=Windowed VSync=True
+[29-09-2026 06:19:23.554] [Info] [Platform] SDL video backend:
+[29-09-2026 06:19:23.554] [Info] [Platform] Name: windows
+[29-09-2026 06:19:23.554] [Info] [Platform] Backend: Windows
+[29-09-2026 06:19:23.554] [Info] [Platform] Window capabilities:
+[29-09-2026 06:19:23.554] [Info] [Platform] CanPositionWindow: True
+[29-09-2026 06:19:23.554] [Info] [Platform] CanSelectWindowedDisplay: True
+[29-09-2026 06:19:23.554] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[29-09-2026 06:19:23.554] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[29-09-2026 06:19:23.554] [Info] [Platform] SupportsDisplayEnumeration: True
+[29-09-2026 06:19:23.554] [Info] [Platform] SupportsDisplayModes: True
+[29-09-2026 06:19:23.555] [Info] [Platform] SupportsContentScale: True
+[29-09-2026 06:19:23.555] [Info] [Platform] UsesCompositorWindowPlacement: False
+[29-09-2026 06:19:23.967] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[29-09-2026 06:19:23.970] [Info] [AssetManager] Initialized with 1 mounts
+[29-09-2026 06:19:23.983] [Info] [Game] Default font loaded successfully
+[29-09-2026 06:19:23.984] [Info] VOID setting up Application folders...
+[29-09-2026 06:19:23.984] [Info] Application folders ready
+[29-09-2026 06:19:24.076] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[29-09-2026 06:19:27.956] [Info] [Coroutine] Stopping all coroutines (0 running)
+[29-09-2026 06:19:27.961] [Info] [AssetManager] Clearing 5 assets and 1 mounts
+[29-09-2026 06:19:27.964] [Info] [Atlas] Clearing renderer atlas: 21 textures, 4 pages
+[29-09-2026 06:19:27.966] [Info] [Window] Disposing SDL window and renderer
+[29-09-2026 06:19:27.988] [Info] [Window] Window disposed
+[29-09-2026 06:21:22.978] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[29-09-2026 06:21:22.982] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[29-09-2026 06:21:22.982] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[29-09-2026 06:21:22.982] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[29-09-2026 06:21:22.982] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[29-09-2026 06:21:22.982] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[29-09-2026 06:21:22.993] [Info] Version: 2.1.1.0  Hash: 125F856061FEC5A7
+[29-09-2026 06:21:22.993] [Info] 
+[29-09-2026 06:21:22.997] [Info] [Window] Creating SDL window: 1280x720 'My Game' Mode=Windowed VSync=True
+[29-09-2026 06:21:23.251] [Info] [Platform] SDL video backend:
+[29-09-2026 06:21:23.251] [Info] [Platform] Name: windows
+[29-09-2026 06:21:23.251] [Info] [Platform] Backend: Windows
+[29-09-2026 06:21:23.251] [Info] [Platform] Window capabilities:
+[29-09-2026 06:21:23.251] [Info] [Platform] CanPositionWindow: True
+[29-09-2026 06:21:23.251] [Info] [Platform] CanSelectWindowedDisplay: True
+[29-09-2026 06:21:23.251] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[29-09-2026 06:21:23.251] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[29-09-2026 06:21:23.252] [Info] [Platform] SupportsDisplayEnumeration: True
+[29-09-2026 06:21:23.252] [Info] [Platform] SupportsDisplayModes: True
+[29-09-2026 06:21:23.252] [Info] [Platform] SupportsContentScale: True
+[29-09-2026 06:21:23.252] [Info] [Platform] UsesCompositorWindowPlacement: False
+[29-09-2026 06:21:23.684] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[29-09-2026 06:21:23.686] [Info] [AssetManager] Initialized with 1 mounts
+[29-09-2026 06:21:23.699] [Info] [Game] Default font loaded successfully
+[29-09-2026 06:21:23.700] [Info] VOID setting up Application folders...
+[29-09-2026 06:21:23.700] [Info] Application folders ready
+[29-09-2026 06:21:23.790] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[29-09-2026 06:21:48.775] [Info] [Coroutine] Stopping all coroutines (0 running)
+[29-09-2026 06:21:48.781] [Info] [AssetManager] Clearing 5 assets and 1 mounts
+[29-09-2026 06:21:48.783] [Info] [Atlas] Clearing renderer atlas: 21 textures, 4 pages
+[29-09-2026 06:21:48.786] [Info] [Window] Disposing SDL window and renderer
+[29-09-2026 06:21:48.810] [Info] [Window] Window disposed
+[29-09-2026 06:23:33.038] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[29-09-2026 06:23:33.042] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[29-09-2026 06:23:33.042] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[29-09-2026 06:23:33.042] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[29-09-2026 06:23:33.042] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[29-09-2026 06:23:33.042] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[29-09-2026 06:23:33.053] [Info] Version: 2.1.1.0  Hash: 125F856061FEC5A7
+[29-09-2026 06:23:33.053] [Info] 
+[29-09-2026 06:23:33.056] [Info] [Window] Creating SDL window: 1280x720 'My Game' Mode=Windowed VSync=True
+[29-09-2026 06:23:33.306] [Info] [Platform] SDL video backend:
+[29-09-2026 06:23:33.306] [Info] [Platform] Name: windows
+[29-09-2026 06:23:33.306] [Info] [Platform] Backend: Windows
+[29-09-2026 06:23:33.306] [Info] [Platform] Window capabilities:
+[29-09-2026 06:23:33.306] [Info] [Platform] CanPositionWindow: True
+[29-09-2026 06:23:33.306] [Info] [Platform] CanSelectWindowedDisplay: True
+[29-09-2026 06:23:33.306] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[29-09-2026 06:23:33.306] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[29-09-2026 06:23:33.306] [Info] [Platform] SupportsDisplayEnumeration: True
+[29-09-2026 06:23:33.306] [Info] [Platform] SupportsDisplayModes: True
+[29-09-2026 06:23:33.306] [Info] [Platform] SupportsContentScale: True
+[29-09-2026 06:23:33.306] [Info] [Platform] UsesCompositorWindowPlacement: False
+[29-09-2026 06:23:33.704] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[29-09-2026 06:23:33.706] [Info] [AssetManager] Initialized with 1 mounts
+[29-09-2026 06:23:33.720] [Info] [Game] Default font loaded successfully
+[29-09-2026 06:23:33.720] [Info] VOID setting up Application folders...
+[29-09-2026 06:23:33.721] [Info] Application folders ready
+[29-09-2026 06:23:33.829] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[29-09-2026 06:23:49.431] [Info] [Coroutine] Stopping all coroutines (0 running)
+[29-09-2026 06:23:49.435] [Info] [AssetManager] Clearing 5 assets and 1 mounts
+[29-09-2026 06:23:49.438] [Info] [Atlas] Clearing renderer atlas: 21 textures, 4 pages
+[29-09-2026 06:23:49.441] [Info] [Window] Disposing SDL window and renderer
+[29-09-2026 06:23:49.469] [Info] [Window] Window disposed
+[29-09-2026 06:44:26.077] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[29-09-2026 06:44:26.081] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[29-09-2026 06:44:26.081] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[29-09-2026 06:44:26.081] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[29-09-2026 06:44:26.081] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[29-09-2026 06:44:26.081] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[29-09-2026 06:44:26.115] [Info] Version: 2.1.1.0  Hash: 125F856061FEC5A7
+[29-09-2026 06:44:26.115] [Info] 
+[29-09-2026 06:44:26.119] [Info] [Window] Creating SDL window: 1280x720 'My Game' Mode=Windowed VSync=True
+[29-09-2026 06:44:26.466] [Info] [Platform] SDL video backend:
+[29-09-2026 06:44:26.466] [Info] [Platform] Name: windows
+[29-09-2026 06:44:26.466] [Info] [Platform] Backend: Windows
+[29-09-2026 06:44:26.466] [Info] [Platform] Window capabilities:
+[29-09-2026 06:44:26.466] [Info] [Platform] CanPositionWindow: True
+[29-09-2026 06:44:26.466] [Info] [Platform] CanSelectWindowedDisplay: True
+[29-09-2026 06:44:26.466] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[29-09-2026 06:44:26.467] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[29-09-2026 06:44:26.467] [Info] [Platform] SupportsDisplayEnumeration: True
+[29-09-2026 06:44:26.467] [Info] [Platform] SupportsDisplayModes: True
+[29-09-2026 06:44:26.467] [Info] [Platform] SupportsContentScale: True
+[29-09-2026 06:44:26.467] [Info] [Platform] UsesCompositorWindowPlacement: False
+[29-09-2026 06:44:27.093] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[29-09-2026 06:44:27.095] [Info] [AssetManager] Initialized with 1 mounts
+[29-09-2026 06:44:27.109] [Info] [Game] Default font loaded successfully
+[29-09-2026 06:44:27.110] [Info] VOID setting up Application folders...
+[29-09-2026 06:44:27.110] [Info] Application folders ready
+[29-09-2026 06:44:27.257] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[29-09-2026 06:44:45.184] [Info] [Coroutine] Stopping all coroutines (0 running)
+[29-09-2026 06:44:45.190] [Info] [AssetManager] Clearing 5 assets and 1 mounts
+[29-09-2026 06:44:45.192] [Info] [Atlas] Clearing renderer atlas: 21 textures, 4 pages
+[29-09-2026 06:44:45.196] [Info] [Window] Disposing SDL window and renderer
+[29-09-2026 06:44:45.232] [Info] [Window] Window disposed
+[29-09-2026 06:45:30.350] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[29-09-2026 06:45:30.353] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[29-09-2026 06:45:30.353] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[29-09-2026 06:45:30.353] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[29-09-2026 06:45:30.353] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[29-09-2026 06:45:30.353] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[29-09-2026 06:45:30.364] [Info] Version: 2.1.1.0  Hash: 125F856061FEC5A7
+[29-09-2026 06:45:30.365] [Info] 
+[29-09-2026 06:45:30.368] [Info] [Window] Creating SDL window: 1280x720 'My Game' Mode=Windowed VSync=True
+[29-09-2026 06:45:30.600] [Info] [Platform] SDL video backend:
+[29-09-2026 06:45:30.600] [Info] [Platform] Name: windows
+[29-09-2026 06:45:30.600] [Info] [Platform] Backend: Windows
+[29-09-2026 06:45:30.600] [Info] [Platform] Window capabilities:
+[29-09-2026 06:45:30.600] [Info] [Platform] CanPositionWindow: True
+[29-09-2026 06:45:30.600] [Info] [Platform] CanSelectWindowedDisplay: True
+[29-09-2026 06:45:30.600] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[29-09-2026 06:45:30.600] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[29-09-2026 06:45:30.600] [Info] [Platform] SupportsDisplayEnumeration: True
+[29-09-2026 06:45:30.600] [Info] [Platform] SupportsDisplayModes: True
+[29-09-2026 06:45:30.600] [Info] [Platform] SupportsContentScale: True
+[29-09-2026 06:45:30.600] [Info] [Platform] UsesCompositorWindowPlacement: False
+[29-09-2026 06:45:31.016] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[29-09-2026 06:45:31.018] [Info] [AssetManager] Initialized with 1 mounts
+[29-09-2026 06:45:31.032] [Info] [Game] Default font loaded successfully
+[29-09-2026 06:45:31.032] [Info] VOID setting up Application folders...
+[29-09-2026 06:45:31.033] [Info] Application folders ready
+[29-09-2026 06:45:31.122] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[29-09-2026 06:45:41.300] [Info] [Coroutine] Stopping all coroutines (0 running)
+[29-09-2026 06:45:41.305] [Info] [AssetManager] Clearing 5 assets and 1 mounts
+[29-09-2026 06:45:41.308] [Info] [Atlas] Clearing renderer atlas: 21 textures, 4 pages
+[29-09-2026 06:45:41.311] [Info] [Window] Disposing SDL window and renderer
+[29-09-2026 06:45:41.334] [Info] [Window] Window disposed
+[29-09-2026 07:19:26.867] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[29-09-2026 07:19:26.873] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[29-09-2026 07:19:26.873] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[29-09-2026 07:19:26.873] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[29-09-2026 07:19:26.873] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[29-09-2026 07:19:26.873] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[29-09-2026 07:19:26.899] [Info] Version: 2.1.1.0  Hash: 125F856061FEC5A7
+[29-09-2026 07:19:26.899] [Info] 
+[29-09-2026 07:19:26.906] [Info] [Window] Creating SDL window: 1280x720 'My Game' Mode=Windowed VSync=True
+[29-09-2026 07:19:27.676] [Info] [Platform] SDL video backend:
+[29-09-2026 07:19:27.676] [Info] [Platform] Name: windows
+[29-09-2026 07:19:27.676] [Info] [Platform] Backend: Windows
+[29-09-2026 07:19:27.676] [Info] [Platform] Window capabilities:
+[29-09-2026 07:19:27.676] [Info] [Platform] CanPositionWindow: True
+[29-09-2026 07:19:27.676] [Info] [Platform] CanSelectWindowedDisplay: True
+[29-09-2026 07:19:27.676] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[29-09-2026 07:19:27.677] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[29-09-2026 07:19:27.677] [Info] [Platform] SupportsDisplayEnumeration: True
+[29-09-2026 07:19:27.677] [Info] [Platform] SupportsDisplayModes: True
+[29-09-2026 07:19:27.677] [Info] [Platform] SupportsContentScale: True
+[29-09-2026 07:19:27.677] [Info] [Platform] UsesCompositorWindowPlacement: False
+[29-09-2026 07:19:28.335] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[29-09-2026 07:19:28.337] [Info] [AssetManager] Initialized with 1 mounts
+[29-09-2026 07:19:28.353] [Info] [Game] Default font loaded successfully
+[29-09-2026 07:19:28.353] [Info] VOID setting up Application folders...
+[29-09-2026 07:19:28.354] [Info] Application folders ready
+[29-09-2026 07:19:28.497] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[29-09-2026 07:20:05.206] [Info] [Coroutine] Stopping all coroutines (0 running)
+[29-09-2026 07:20:05.211] [Info] [AssetManager] Clearing 5 assets and 1 mounts
+[29-09-2026 07:20:05.215] [Info] [Atlas] Clearing renderer atlas: 21 textures, 4 pages
+[29-09-2026 07:20:05.219] [Info] [Window] Disposing SDL window and renderer
+[29-09-2026 07:20:05.283] [Info] [Window] Window disposed
+[29-09-2026 18:02:12.054] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[29-09-2026 18:02:12.058] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[29-09-2026 18:02:12.058] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[29-09-2026 18:02:12.058] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[29-09-2026 18:02:12.058] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[29-09-2026 18:02:12.058] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[29-09-2026 18:02:12.071] [Info] Version: 2.1.1.0  Hash: 125F856061FEC5A7
+[29-09-2026 18:02:12.071] [Info] 
+[29-09-2026 18:02:12.074] [Info] [Window] Creating SDL window: 1280x720 'My Game' Mode=Windowed VSync=True
+[29-09-2026 18:02:12.948] [Info] [Platform] SDL video backend:
+[29-09-2026 18:02:12.948] [Info] [Platform] Name: windows
+[29-09-2026 18:02:12.949] [Info] [Platform] Backend: Windows
+[29-09-2026 18:02:12.949] [Info] [Platform] Window capabilities:
+[29-09-2026 18:02:12.949] [Info] [Platform] CanPositionWindow: True
+[29-09-2026 18:02:12.949] [Info] [Platform] CanSelectWindowedDisplay: True
+[29-09-2026 18:02:12.949] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[29-09-2026 18:02:12.949] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[29-09-2026 18:02:12.949] [Info] [Platform] SupportsDisplayEnumeration: True
+[29-09-2026 18:02:12.949] [Info] [Platform] SupportsDisplayModes: True
+[29-09-2026 18:02:12.949] [Info] [Platform] SupportsContentScale: True
+[29-09-2026 18:02:12.949] [Info] [Platform] UsesCompositorWindowPlacement: False
+[29-09-2026 18:02:13.906] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[29-09-2026 18:02:13.908] [Info] [AssetManager] Initialized with 1 mounts
+[29-09-2026 18:02:13.922] [Info] [Game] Default font loaded successfully
+[29-09-2026 18:02:13.922] [Info] VOID setting up Application folders...
+[29-09-2026 18:02:13.923] [Info] Application folders ready
+[29-09-2026 18:02:14.042] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[29-09-2026 18:02:18.002] [Info] [Coroutine] Stopping all coroutines (0 running)
+[29-09-2026 18:02:18.006] [Info] [AssetManager] Clearing 5 assets and 1 mounts
+[29-09-2026 18:02:18.009] [Info] [Atlas] Clearing renderer atlas: 21 textures, 4 pages
+[29-09-2026 18:02:18.012] [Info] [Window] Disposing SDL window and renderer
+[29-09-2026 18:02:18.034] [Info] [Window] Window disposed
+[29-09-2026 18:02:24.872] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[29-09-2026 18:02:24.876] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[29-09-2026 18:02:24.876] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[29-09-2026 18:02:24.876] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[29-09-2026 18:02:24.876] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[29-09-2026 18:02:24.876] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[29-09-2026 18:02:24.908] [Info] Version: 2.1.1.0  Hash: 125F856061FEC5A7
+[29-09-2026 18:02:24.908] [Info] 
+[29-09-2026 18:02:24.911] [Info] [Window] Creating SDL window: 1280x720 'My Game' Mode=Windowed VSync=True
+[29-09-2026 18:02:25.147] [Info] [Platform] SDL video backend:
+[29-09-2026 18:02:25.147] [Info] [Platform] Name: windows
+[29-09-2026 18:02:25.147] [Info] [Platform] Backend: Windows
+[29-09-2026 18:02:25.147] [Info] [Platform] Window capabilities:
+[29-09-2026 18:02:25.148] [Info] [Platform] CanPositionWindow: True
+[29-09-2026 18:02:25.148] [Info] [Platform] CanSelectWindowedDisplay: True
+[29-09-2026 18:02:25.148] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[29-09-2026 18:02:25.148] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[29-09-2026 18:02:25.148] [Info] [Platform] SupportsDisplayEnumeration: True
+[29-09-2026 18:02:25.148] [Info] [Platform] SupportsDisplayModes: True
+[29-09-2026 18:02:25.148] [Info] [Platform] SupportsContentScale: True
+[29-09-2026 18:02:25.148] [Info] [Platform] UsesCompositorWindowPlacement: False
+[29-09-2026 18:02:25.582] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[29-09-2026 18:02:25.584] [Info] [AssetManager] Initialized with 1 mounts
+[29-09-2026 18:02:25.598] [Info] [Game] Default font loaded successfully
+[29-09-2026 18:02:25.598] [Info] VOID setting up Application folders...
+[29-09-2026 18:02:25.599] [Info] Application folders ready
+[29-09-2026 18:02:25.700] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[29-09-2026 18:02:28.978] [Info] [Coroutine] Stopping all coroutines (0 running)
+[29-09-2026 18:02:28.982] [Info] [AssetManager] Clearing 5 assets and 1 mounts
+[29-09-2026 18:02:28.985] [Info] [Atlas] Clearing renderer atlas: 10 textures, 4 pages
+[29-09-2026 18:02:28.988] [Info] [Window] Disposing SDL window and renderer
+[29-09-2026 18:02:29.012] [Info] [Window] Window disposed
+[29-09-2026 18:02:41.146] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[29-09-2026 18:02:41.149] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[29-09-2026 18:02:41.149] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[29-09-2026 18:02:41.149] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[29-09-2026 18:02:41.149] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[29-09-2026 18:02:41.149] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[29-09-2026 18:02:41.161] [Info] Version: 2.1.1.0  Hash: 125F856061FEC5A7
+[29-09-2026 18:02:41.161] [Info] 
+[29-09-2026 18:02:41.164] [Info] [Window] Creating SDL window: 1280x720 'My Game' Mode=Windowed VSync=True
+[29-09-2026 18:02:41.399] [Info] [Platform] SDL video backend:
+[29-09-2026 18:02:41.399] [Info] [Platform] Name: windows
+[29-09-2026 18:02:41.399] [Info] [Platform] Backend: Windows
+[29-09-2026 18:02:41.399] [Info] [Platform] Window capabilities:
+[29-09-2026 18:02:41.399] [Info] [Platform] CanPositionWindow: True
+[29-09-2026 18:02:41.399] [Info] [Platform] CanSelectWindowedDisplay: True
+[29-09-2026 18:02:41.399] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[29-09-2026 18:02:41.399] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[29-09-2026 18:02:41.399] [Info] [Platform] SupportsDisplayEnumeration: True
+[29-09-2026 18:02:41.399] [Info] [Platform] SupportsDisplayModes: True
+[29-09-2026 18:02:41.400] [Info] [Platform] SupportsContentScale: True
+[29-09-2026 18:02:41.400] [Info] [Platform] UsesCompositorWindowPlacement: False
+[29-09-2026 18:02:41.814] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[29-09-2026 18:02:41.816] [Info] [AssetManager] Initialized with 1 mounts
+[29-09-2026 18:02:41.829] [Info] [Game] Default font loaded successfully
+[29-09-2026 18:02:41.830] [Info] VOID setting up Application folders...
+[29-09-2026 18:02:41.830] [Info] Application folders ready
+[29-09-2026 18:02:41.934] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[29-09-2026 18:02:45.835] [Info] [Coroutine] Stopping all coroutines (0 running)
+[29-09-2026 18:02:45.839] [Info] [AssetManager] Clearing 5 assets and 1 mounts
+[29-09-2026 18:02:45.842] [Info] [Atlas] Clearing renderer atlas: 21 textures, 4 pages
+[29-09-2026 18:02:45.845] [Info] [Window] Disposing SDL window and renderer
+[29-09-2026 18:02:45.872] [Info] [Window] Window disposed
+[29-09-2026 19:25:39.314] [Info]   ██╗   ██╗   ██████╗   ██╗  ██████╗
+[29-09-2026 19:25:39.317] [Info]   ██║   ██║  ██╔═══██╗  ██║  ██╔══██╗
+[29-09-2026 19:25:39.317] [Info]   ██║   ██║  ██║   ██║  ██║  ██║  ██║
+[29-09-2026 19:25:39.317] [Info]   ╚██╗ ██╔╝  ██║   ██║  ██║  ██║  ██║
+[29-09-2026 19:25:39.317] [Info]    ╚████╔╝   ╚██████╔╝  ██║  ██████╔╝
+[29-09-2026 19:25:39.317] [Info]     ╚═══╝     ╚═════╝   ╚═╝  ╚═════╝
+[29-09-2026 19:25:39.330] [Info] Version: 2.1.1.0  Hash: 125F856061FEC5A7
+[29-09-2026 19:25:39.330] [Info] 
+[29-09-2026 19:25:39.334] [Info] [Window] Creating SDL window: 1280x720 'My Game' Mode=Windowed VSync=True
+[29-09-2026 19:25:39.961] [Info] [Platform] SDL video backend:
+[29-09-2026 19:25:39.961] [Info] [Platform] Name: windows
+[29-09-2026 19:25:39.961] [Info] [Platform] Backend: Windows
+[29-09-2026 19:25:39.961] [Info] [Platform] Window capabilities:
+[29-09-2026 19:25:39.961] [Info] [Platform] CanPositionWindow: True
+[29-09-2026 19:25:39.962] [Info] [Platform] CanSelectWindowedDisplay: True
+[29-09-2026 19:25:39.962] [Info] [Platform] CanSelectDesktopFullscreenDisplay: True
+[29-09-2026 19:25:39.962] [Info] [Platform] CanSelectExclusiveFullscreenDisplay: True
+[29-09-2026 19:25:39.962] [Info] [Platform] SupportsDisplayEnumeration: True
+[29-09-2026 19:25:39.962] [Info] [Platform] SupportsDisplayModes: True
+[29-09-2026 19:25:39.962] [Info] [Platform] SupportsContentScale: True
+[29-09-2026 19:25:39.962] [Info] [Platform] UsesCompositorWindowPlacement: False
+[29-09-2026 19:25:40.551] [Info] [Window] SDL window and renderer created successfully: VOID OpenGL
+[29-09-2026 19:25:40.555] [Info] [AssetManager] Initialized with 1 mounts
+[29-09-2026 19:25:40.569] [Info] [Game] Default font loaded successfully
+[29-09-2026 19:25:40.569] [Info] VOID setting up Application folders...
+[29-09-2026 19:25:40.570] [Info] Application folders ready
+[29-09-2026 19:25:40.746] [Info] [Atlas] Initializing renderer atlas: 4 pages of 2048x2048
+[29-09-2026 19:25:40.887] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:40.973] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:40.975] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:40.990] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.006] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.023] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.039] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.055] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.072] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.089] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.105] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.122] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.139] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.156] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.172] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.189] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.205] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.222] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.239] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.255] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.272] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.288] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.305] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.322] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.339] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.355] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.372] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.389] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.406] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.422] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.439] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.456] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.472] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.489] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.506] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.522] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.539] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.556] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.572] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.589] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.606] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.622] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.639] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.656] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.672] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.689] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.706] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.722] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.739] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.756] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.772] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.790] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.807] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.823] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.840] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.856] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.873] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.890] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.906] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.923] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.940] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.956] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.973] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:41.990] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.006] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.023] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.040] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.056] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.073] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.090] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.106] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.122] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.139] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.156] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.172] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.189] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.206] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.223] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.240] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.256] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.273] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.289] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.306] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.322] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.339] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.356] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.373] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.389] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.406] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.422] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.439] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.456] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.472] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.489] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.506] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.522] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.539] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.556] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.572] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.589] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.606] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.622] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.639] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.656] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.673] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.689] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.706] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.723] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.739] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.756] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.773] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.789] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.806] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.823] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.839] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.856] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.873] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.889] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.906] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.923] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.939] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.956] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.973] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:42.989] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.007] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.023] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.040] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.056] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.073] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.090] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.106] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.123] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.140] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.157] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.173] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.190] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.207] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.223] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.240] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.257] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.273] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.290] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.306] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.323] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.339] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.356] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.373] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.390] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.407] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.423] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.440] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.457] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.473] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.490] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.507] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.523] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.540] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.556] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.573] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.590] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.607] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.623] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.640] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.657] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.673] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.690] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.707] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.723] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.740] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.757] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.773] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.790] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.807] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.823] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.840] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.857] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.873] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.890] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.907] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.924] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.941] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.957] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.973] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:43.990] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.007] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.024] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.041] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.058] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.074] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.090] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.107] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.124] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.141] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.157] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.174] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.191] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.207] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.224] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.241] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.257] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.274] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.291] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.307] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.324] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.341] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.358] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.374] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.391] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.407] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.424] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.441] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.458] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.474] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.491] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.507] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.524] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.541] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.558] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.574] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.591] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.608] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.624] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.641] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.658] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.674] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.691] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.708] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.724] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.741] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.758] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.774] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.791] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.808] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.825] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.841] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.858] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.874] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.891] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.908] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.925] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.941] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.958] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.975] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:44.992] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:45.008] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:45.025] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:45.041] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:45.058] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:45.074] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:45.091] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:45.108] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:45.125] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:45.141] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:45.158] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:45.175] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:45.191] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:45.208] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:45.224] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:45.241] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:45.258] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:45.274] [Warning] [AssetManager] Failed to load tileset texture for tileset ID 0: Tileset with ID 0 was not found in LDTK project
+[29-09-2026 19:25:45.393] [Info] [Coroutine] Stopping all coroutines (0 running)
+[29-09-2026 19:25:45.397] [Info] [AssetManager] Clearing 5 assets and 1 mounts
+[29-09-2026 19:25:45.399] [Info] [Atlas] Clearing renderer atlas: 21 textures, 4 pages
+[29-09-2026 19:25:45.403] [Info] [Window] Disposing SDL window and renderer
+[29-09-2026 19:25:45.428] [Info] [Window] Window disposed

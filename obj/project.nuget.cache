@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "dgSpecHash": "Yr8DMe+sTxU=",
+  "success": true,
+  "projectFilePath": "D:\\Code\\Void\\VoidGame\\VoidGame.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Yandere312\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\3.1.6\\microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512",
+    "C:\\Users\\Yandere312\\.nuget\\packages\\microsoft.extensions.dependencymodel\\9.0.9\\microsoft.extensions.dependencymodel.9.0.9.nupkg.sha512",
+    "C:\\Users\\Yandere312\\.nuget\\packages\\naudio.core\\3.0.1\\naudio.core.3.0.1.nupkg.sha512",
+    "C:\\Users\\Yandere312\\.nuget\\packages\\naudio.soundfile\\3.0.1\\naudio.soundfile.3.0.1.nupkg.sha512",
+    "C:\\Users\\Yandere312\\.nuget\\packages\\sdl3-cs\\3.4.16\\sdl3-cs.3.4.16.nupkg.sha512",
+    "C:\\Users\\Yandere312\\.nuget\\packages\\sdl3-cs.linux\\3.4.16\\sdl3-cs.linux.3.4.16.nupkg.sha512",
+    "C:\\Users\\Yandere312\\.nuget\\packages\\sdl3-cs.macos\\3.4.16\\sdl3-cs.macos.3.4.16.nupkg.sha512",
+    "C:\\Users\\Yandere312\\.nuget\\packages\\sdl3-cs.windows\\3.4.16\\sdl3-cs.windows.3.4.16.nupkg.sha512",
+    "C:\\Users\\Yandere312\\.nuget\\packages\\silk.net.core\\2.23.0\\silk.net.core.2.23.0.nupkg.sha512",
+    "C:\\Users\\Yandere312\\.nuget\\packages\\silk.net.maths\\2.23.0\\silk.net.maths.2.23.0.nupkg.sha512",
+    "C:\\Users\\Yandere312\\.nuget\\packages\\silk.net.openal\\2.23.0\\silk.net.openal.2.23.0.nupkg.sha512",
+    "C:\\Users\\Yandere312\\.nuget\\packages\\silk.net.openal.soft.native\\1.23.1\\silk.net.openal.soft.native.1.23.1.nupkg.sha512",
+    "C:\\Users\\Yandere312\\.nuget\\packages\\silk.net.opengl\\2.23.0\\silk.net.opengl.2.23.0.nupkg.sha512",
+    "C:\\Users\\Yandere312\\.nuget\\packages\\stbimagesharp\\2.30.16\\stbimagesharp.2.30.16.nupkg.sha512",
+    "C:\\Users\\Yandere312\\.nuget\\packages\\system.numerics.tensors\\9.0.0\\system.numerics.tensors.9.0.0.nupkg.sha512",
+    "C:\\Users\\Yandere312\\.nuget\\packages\\void.engine\\2.2.1\\void.engine.2.2.1.nupkg.sha512",
+    "C:\\Users\\Yandere312\\.nuget\\packages\\void.packer\\1.0.1\\void.packer.1.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

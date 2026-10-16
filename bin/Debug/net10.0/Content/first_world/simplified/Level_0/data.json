@@ -1,0 +1,64 @@
+{
+	"identifier": "Level_0",
+	"uniqueIdentifer": "111f77b0-96d0-11f1-a9b7-012badf20471",
+	"x": 0,
+	"y": 0,
+	"width": 256,
+	"height": 256,
+	"bgColor": "#696A79",
+	"neighbourLevels": [
+		{
+			"levelIid": "b8239f50-96d0-11f1-804b-b59f74439995",
+			"dir": "e"
+		}
+	],
+	"customFields" : {},
+	"layers": [
+		"Light_grass.png",
+		"Stone.png",
+		"Dirty_ground.png"
+	],
+	"entities": {
+		"Player": [
+			{
+				"id": "Player",
+				"iid": "8ea118b0-96d0-11f1-804b-172e2801ff4d",
+				"layer": "Player",
+				"x": 80,
+				"y": 112,
+				"width": 32,
+				"height": 32,
+				"color": 12470831,
+				"customFields": {
+					"Sprite": {
+						"tilesetUid": 135,
+						"x": 128,
+						"y": 128,
+						"w": 32,
+						"h": 32
+					}
+				}
+			}
+		],
+		"Door": [
+			{
+				"id": "Door",
+				"iid": "5b34d340-96d0-11f1-804b-c9a26180906d",
+				"layer": "Player",
+				"x": 240,
+				"y": 176,
+				"width": 32,
+				"height": 32,
+				"color": 6539085,
+				"customFields": {
+					"Entity_ref": {
+						"entityIid": "5d7e2700-96d0-11f1-804b-11f1eb8f8798",
+						"layerIid": "b823c660-96d0-11f1-804b-2d4a37bf6931",
+						"levelIid": "b8239f50-96d0-11f1-804b-b59f74439995",
+						"worldIid": "111f2990-96d0-11f1-a9b7-cd670f5ea0ce"
+					}
+				}
+			}
+		]
+	}
+}
