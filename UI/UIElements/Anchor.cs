@@ -1,4 +1,4 @@
-namespace VoidGame.UI.UiElements;
+namespace VoidGame.UI.UIElements;
 
 public enum Anchor
 {

@@ -80,3 +80,4 @@ D:\Code\Void\VoidGame\bin\Debug\net10.0\Content\back\111f0280-96d0-11f1-a9b7-6fa
 D:\Code\Void\VoidGame\bin\Debug\net10.0\Content\back\111f0280-96d0-11f1-a9b7-6fa0463af9fe_2026-10-13_18-45-12\first_world.ldtk
 D:\Code\Void\VoidGame\bin\Debug\net10.0\Content\back\111f0280-96d0-11f1-a9b7-6fa0463af9fe_2026-10-13_18-49-55\first_world.ldtk
 D:\Code\Void\VoidGame\bin\Debug\net10.0\Content\back\111f0280-96d0-11f1-a9b7-6fa0463af9fe_2026-10-13_23-47-30\first_world.ldtk
+D:\Code\Void\VoidGame\obj\Debug\net10.0\VoidGame.sourcelink.json

@@ -2,14 +2,32 @@ using Void.Engine.Graphics;
 using Void.Engine.Systems;
 using VoidGame.Shaders;
 
-namespace VoidGame.UI.UiElements;
+namespace VoidGame.UI.UIElements;
 
-public class Panel(Vect2 ParrentSize) : UiElement<Panel>
+public record struct PanelColors(
+    Color ShadowColor,
+    Color BorderColor,
+    Color PaddingColor,
+    Color ContentColor
+);
+
+public class Panel : UIElement<Panel>
 {
     public float BorderWidth { get; set; } = 1f;
     public float PaddingWidth { get; set; } = 2f;
     public float ShadowSize { get; set; } = 0f;
+
+    public PanelColors Colors { get; set; } =
+        new PanelColors(Color.Blue, Color.Black, Color.Cyan, Color.Gray);
+
     public Vect2 ShadowOffset { get; set; } = new(2, 2);
+    public Anchor Anchor { get; set; } = Anchor.TopLeft;
+
+    public Panel SetColors(PanelColors colors)
+    {
+        Colors = colors;
+        return this;
+    }
 
     public Panel SetDock(Anchor anchor)
     {
@@ -33,26 +51,52 @@ public class Panel(Vect2 ParrentSize) : UiElement<Panel>
         return this;
     }
 
-    public void Draw(SpriteBatcher batcher, FrameTime frameTime)
+    public override void UpdateLayout(Rect2 parentContent)
     {
-        var size = ParrentSize;
+        float w = Size.X * parentContent.Width;
+        float h = Size.Y * parentContent.Height;
 
-        float x = Position.X * size.X;
-        float y = Position.Y * size.Y;
-        float w = Size.X * size.X;
-        float h = Size.Y * size.Y;
+        float x = Position.X * parentContent.Width;
+        float y = Position.Y * parentContent.Height;
+
+        // Apply Anchors relative to the parent
+        switch (Anchor)
+        {
+            case Anchor.TopCenter:
+            case Anchor.MiddleCenter:
+            case Anchor.BottomCenter:
+                x = (parentContent.Width - w) / 2f;
+                break;
+            case Anchor.TopRight:
+            case Anchor.MiddleRight:
+            case Anchor.BottomRight:
+                x = parentContent.Width - w;
+                break;
+        }
+
+        switch (Anchor)
+        {
+            case Anchor.MiddleLeft:
+            case Anchor.MiddleCenter:
+            case Anchor.MiddleRight:
+                y = (parentContent.Height - h) / 2f;
+                break;
+            case Anchor.BottomLeft:
+            case Anchor.BottomCenter:
+            case Anchor.BottomRight:
+                y = parentContent.Height - h;
+                break;
+        }
+
+        // Offset by the parent's absolute position
+        x += parentContent.X;
+        y += parentContent.Y;
+
+        Bounds = new Rect2(x, y, w, h);
 
         var bw = BorderWidth;
         var bwm = -bw * 2;
-        var borderRect = new Rect2(x, y, w, h);
         var paddingRect = new Rect2(x + bw, y + bw, w + bwm, h + bwm);
-
-        var shadowRect = new Rect2(
-            borderRect.X - ShadowSize + ShadowOffset.X,
-            borderRect.Y - ShadowSize + ShadowOffset.Y,
-            borderRect.Width + (ShadowSize * 2),
-            borderRect.Height + (ShadowSize * 2)
-        );
 
         var pw = PaddingWidth;
         var pwm = -pw * 2;
@@ -63,10 +107,40 @@ public class Panel(Vect2 ParrentSize) : UiElement<Panel>
             paddingRect.Height + pwm
         );
 
-        Fill(batcher, shadowRect, Color.DarkBlue, paddingRect);
-        Fill(batcher, borderRect, Color.Black, paddingRect);
-        Fill(batcher, paddingRect, Color.White, Content);
-        Fill(batcher, Content, Color.Red, Rect2.Empty);
+        // CRITICAL: Cascade the layout update to all children, passing OUR Content area
+        foreach (var child in Children)
+        {
+            child.UpdateLayout(this.Content);
+        }
+    }
+
+    public override void Draw(SpriteBatcher batcher, FrameTime frameTime)
+    {
+        var borderRect = Bounds;
+        var paddingRect = new Rect2(
+            borderRect.X + BorderWidth,
+            borderRect.Y + BorderWidth,
+            borderRect.Width - (BorderWidth * 2),
+            borderRect.Height - (BorderWidth * 2)
+        );
+
+        var shadowRect = new Rect2(
+            borderRect.X - ShadowSize + ShadowOffset.X,
+            borderRect.Y - ShadowSize + ShadowOffset.Y,
+            borderRect.Width + (ShadowSize * 2),
+            borderRect.Height + (ShadowSize * 2)
+        );
+
+        Fill(batcher, shadowRect, Colors.ShadowColor, paddingRect);
+        //Fill(batcher, borderRect, Colors.BorderColor, paddingRect);
+        Fill(batcher, paddingRect, Colors.PaddingColor, Content);
+        //Fill(batcher, Content, Colors.ContentColor, Rect2.Empty);
+
+        // Draw all children
+        foreach (var child in Children)
+        {
+            child.Draw(batcher, frameTime);
+        }
     }
 
     private static void Fill(SpriteBatcher batcher, Rect2 rect, Color color, Rect2 toCut)
