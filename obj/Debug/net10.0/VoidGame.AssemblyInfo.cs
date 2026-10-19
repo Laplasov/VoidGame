@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VoidGame")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f2e981426ebe670d2c9a5f413cc7706506c6420")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b39fcc10f9f8c652d648c802f28c556672ae7ce")]
 [assembly: System.Reflection.AssemblyProductAttribute("VoidGame")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VoidGame")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

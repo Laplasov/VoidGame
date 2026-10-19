@@ -4,28 +4,66 @@ using VoidGame.Shaders;
 
 namespace VoidGame.UI.UIElements;
 
-public record struct PanelColors(
-    Color ShadowColor,
-    Color BorderColor,
-    Color PaddingColor,
-    Color ContentColor
-);
+public class PanelFills
+{
+    public UiFill ShadowColor { get; set; }
+    public UiFill BorderColor { get; set; }
+    public UiFill PaddingColor { get; set; }
+    public UiFill ContentColor { get; set; }
+}
+
+public class PanelProportions
+{
+    public float BorderWidth { get; set; }
+    public float PaddingWidth { get; set; }
+    public float ShadowSize { get; set; }
+    public Vect2 ShadowOffset { get; set; }
+    public Vect4 RoundedCorners { get; set; }
+}
 
 public class Panel : UIElement<Panel>
 {
-    public float BorderWidth { get; set; } = 1f;
-    public float PaddingWidth { get; set; } = 2f;
-    public float ShadowSize { get; set; } = 0f;
+    public PanelFills Fills { get; set; } =
+        new PanelFills()
+        {
+            ShadowColor = Color.Blue,
+            BorderColor = Color.Black,
+            PaddingColor = Color.Cyan,
+            ContentColor = Color.Gray,
+        };
 
-    public PanelColors Colors { get; set; } =
-        new PanelColors(Color.Blue, Color.Black, Color.Cyan, Color.Gray);
+    public PanelProportions Prop { get; set; } =
+        new PanelProportions()
+        {
+            BorderWidth = 1f,
+            PaddingWidth = 2f,
+            ShadowSize = 0f,
+            ShadowOffset = new(2, 2),
+            RoundedCorners = new(8f, 8f, 8f, 8f),
+        };
 
-    public Vect2 ShadowOffset { get; set; } = new(2, 2);
-    public Anchor Anchor { get; set; } = Anchor.TopLeft;
-
-    public Panel SetColors(PanelColors colors)
+    public Panel SetFills(UiFill shadow, UiFill border, UiFill padding, UiFill content)
     {
-        Colors = colors;
+        Fills.ShadowColor = shadow;
+        Fills.BorderColor = border;
+        Fills.PaddingColor = padding;
+        Fills.ContentColor = content;
+        return this;
+    }
+
+    public Panel SetProportions(
+        float borderWidth,
+        float paddingWidth,
+        float shadowSize,
+        Vect2 shadowOffset,
+        Vect4 roundedCorners
+    )
+    {
+        Prop.BorderWidth = borderWidth;
+        Prop.PaddingWidth = paddingWidth;
+        Prop.ShadowSize = shadowSize;
+        Prop.ShadowOffset = shadowOffset;
+        Prop.RoundedCorners = roundedCorners;
         return this;
     }
 
@@ -56,49 +94,17 @@ public class Panel : UIElement<Panel>
         float w = Size.X * parentContent.Width;
         float h = Size.Y * parentContent.Height;
 
-        float x = Position.X * parentContent.Width;
-        float y = Position.Y * parentContent.Height;
-
-        // Apply Anchors relative to the parent
-        switch (Anchor)
-        {
-            case Anchor.TopCenter:
-            case Anchor.MiddleCenter:
-            case Anchor.BottomCenter:
-                x = (parentContent.Width - w) / 2f;
-                break;
-            case Anchor.TopRight:
-            case Anchor.MiddleRight:
-            case Anchor.BottomRight:
-                x = parentContent.Width - w;
-                break;
-        }
-
-        switch (Anchor)
-        {
-            case Anchor.MiddleLeft:
-            case Anchor.MiddleCenter:
-            case Anchor.MiddleRight:
-                y = (parentContent.Height - h) / 2f;
-                break;
-            case Anchor.BottomLeft:
-            case Anchor.BottomCenter:
-            case Anchor.BottomRight:
-                y = parentContent.Height - h;
-                break;
-        }
-
-        // Offset by the parent's absolute position
-        x += parentContent.X;
-        y += parentContent.Y;
+        // Position is a percentage of the parent's Content, offset by its absolute origin
+        float x = parentContent.X + Position.X * parentContent.Width;
+        float y = parentContent.Y + Position.Y * parentContent.Height;
 
         Bounds = new Rect2(x, y, w, h);
 
-        var bw = BorderWidth;
+        var bw = Prop.BorderWidth;
         var bwm = -bw * 2;
         var paddingRect = new Rect2(x + bw, y + bw, w + bwm, h + bwm);
 
-        var pw = PaddingWidth;
+        var pw = Prop.PaddingWidth;
         var pwm = -pw * 2;
         Content = new Rect2(
             paddingRect.X + pw,
@@ -107,7 +113,6 @@ public class Panel : UIElement<Panel>
             paddingRect.Height + pwm
         );
 
-        // CRITICAL: Cascade the layout update to all children, passing OUR Content area
         foreach (var child in Children)
         {
             child.UpdateLayout(this.Content);
@@ -118,23 +123,37 @@ public class Panel : UIElement<Panel>
     {
         var borderRect = Bounds;
         var paddingRect = new Rect2(
-            borderRect.X + BorderWidth,
-            borderRect.Y + BorderWidth,
-            borderRect.Width - (BorderWidth * 2),
-            borderRect.Height - (BorderWidth * 2)
+            borderRect.X + Prop.BorderWidth,
+            borderRect.Y + Prop.BorderWidth,
+            borderRect.Width - (Prop.BorderWidth * 2),
+            borderRect.Height - (Prop.BorderWidth * 2)
         );
 
         var shadowRect = new Rect2(
-            borderRect.X - ShadowSize + ShadowOffset.X,
-            borderRect.Y - ShadowSize + ShadowOffset.Y,
-            borderRect.Width + (ShadowSize * 2),
-            borderRect.Height + (ShadowSize * 2)
+            borderRect.X - Prop.ShadowSize + Prop.ShadowOffset.X,
+            borderRect.Y - Prop.ShadowSize + Prop.ShadowOffset.Y,
+            borderRect.Width + (Prop.ShadowSize * 2),
+            borderRect.Height + (Prop.ShadowSize * 2)
         );
 
-        Fill(batcher, shadowRect, Colors.ShadowColor, paddingRect);
-        //Fill(batcher, borderRect, Colors.BorderColor, paddingRect);
-        Fill(batcher, paddingRect, Colors.PaddingColor, Content);
-        //Fill(batcher, Content, Colors.ContentColor, Rect2.Empty);
+        var corners = Prop.RoundedCorners;
+
+        Fill(
+            batcher,
+            shadowRect,
+            Fills.ShadowColor,
+            paddingRect,
+            ResolveCorners(Fills.ShadowColor)
+        );
+        Fill(
+            batcher,
+            borderRect,
+            Fills.BorderColor,
+            paddingRect,
+            ResolveCorners(Fills.BorderColor)
+        );
+        Fill(batcher, paddingRect, Fills.PaddingColor, Content, ResolveCorners(Fills.PaddingColor));
+        Fill(batcher, Content, Fills.ContentColor, Rect2.Empty, ResolveCorners(Fills.ContentColor));
 
         // Draw all children
         foreach (var child in Children)
@@ -143,20 +162,37 @@ public class Panel : UIElement<Panel>
         }
     }
 
-    private static void Fill(SpriteBatcher batcher, Rect2 rect, Color color, Rect2 toCut)
+    private Vect4 ResolveCorners(UiFill fill)
+    {
+        if (fill.RoundedCorners.Equals(default(Vect4)))
+            return Prop.RoundedCorners;
+        return fill.RoundedCorners;
+    }
+
+    private static void Fill(
+        SpriteBatcher batcher,
+        Rect2 rect,
+        UiFill fill,
+        Rect2 toCut,
+        Vect4 corners
+    )
     {
         if (rect.Width <= 0 || rect.Height <= 0)
             return;
 
-        float cutX = toCut.X;
-        float cutY = toCut.Y;
-        float cutW = toCut.Width;
-        float cutH = toCut.Height;
+        var shader = FillPrograms.For(fill);
 
-        batcher.SetShader(UiShaders.Cutout);
-        UiShaders.Cutout.SetUniform("uCutRect", new Vect4(cutX, cutY, cutW, cutH));
-        UiShaders.Cutout.SetUniform("uColor", color);
-        batcher.DrawBypassAtlas(WhitePixel, rect, WhitePixel.Bounds, color);
+        batcher.SetShader(shader);
+        shader.SetUniform("uCutRect", new Vect4(toCut.X, toCut.Y, toCut.Width, toCut.Height));
+        shader.SetUniform("uRect", new Vect4(rect.X, rect.Y, rect.Width, rect.Height));
+        shader.SetUniform("uCornerRadii", corners);
+        shader.SetUniform("uFillRotation", fill.Rotation);
+        shader.SetUniform("uFillOffset", fill.Offset);
+        shader.SetUniform("uColor", fill.Color);
+
+        FillPrograms.Apply(fill, shader);
+
+        batcher.DrawBypassAtlas(WhitePixel, rect, WhitePixel.Bounds, fill);
 
         batcher.Flush();
         batcher.ClearShader();
