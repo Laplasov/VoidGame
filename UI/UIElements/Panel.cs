@@ -23,6 +23,8 @@ public class PanelProportions
 
 public class Panel : UIElement<Panel>
 {
+    public Rect2 OuterBounds { get; private set; }
+
     public PanelFills Fills { get; set; } =
         new PanelFills()
         {
@@ -39,7 +41,7 @@ public class Panel : UIElement<Panel>
             PaddingWidth = 2f,
             ShadowSize = 0f,
             ShadowOffset = new(2, 2),
-            RoundedCorners = new(8f, 8f, 8f, 8f),
+            RoundedCorners = new(0f, 0f, 0f, 0f),
         };
 
     public Panel SetFills(UiFill shadow, UiFill border, UiFill padding, UiFill content)
@@ -89,6 +91,16 @@ public class Panel : UIElement<Panel>
         return this;
     }
 
+    private Vect4 ShadowOverhang()
+    {
+        return new Vect4(
+            MathF.Max(0, Prop.ShadowSize - Prop.ShadowOffset.X),
+            MathF.Max(0, Prop.ShadowSize - Prop.ShadowOffset.Y),
+            MathF.Max(0, Prop.ShadowSize + Prop.ShadowOffset.X),
+            MathF.Max(0, Prop.ShadowSize + Prop.ShadowOffset.Y)
+        );
+    }
+
     public override void UpdateLayout(Rect2 parentContent)
     {
         float w = Size.X * parentContent.Width;
@@ -98,11 +110,19 @@ public class Panel : UIElement<Panel>
         float x = parentContent.X + Position.X * parentContent.Width;
         float y = parentContent.Y + Position.Y * parentContent.Height;
 
-        Bounds = new Rect2(x, y, w, h);
+        OuterBounds = new Rect2(x, y, w, h);
+
+        var o = ShadowOverhang();
+        float sox = x + o.X;
+        float soby = y + o.Y;
+        float sobw = MathF.Max(0, w - o.X - o.Z);
+        float sobh = MathF.Max(0, h - o.Y - o.W);
+        Bounds = new Rect2(sox, soby, sobw, sobh);
 
         var bw = Prop.BorderWidth;
-        var bwm = -bw * 2;
-        var paddingRect = new Rect2(x + bw, y + bw, w + bwm, h + bwm);
+        //var bwm = -bw * 2;
+        //var paddingRect = new Rect2(x + bw, y + bw, w + bwm, h + bwm);
+        var paddingRect = new Rect2(sox + bw, soby + bw, sobw - bw * 2, sobh - bw * 2);
 
         var pw = Prop.PaddingWidth;
         var pwm = -pw * 2;
@@ -138,43 +158,43 @@ public class Panel : UIElement<Panel>
 
         var corners = Prop.RoundedCorners;
 
-        Fill(
-            batcher,
-            shadowRect,
-            Fills.ShadowColor,
-            paddingRect,
-            ResolveCorners(Fills.ShadowColor)
+        var borderRadii = ResolveCorners(Fills.BorderColor, Prop.RoundedCorners);
+        var paddingRadii = ResolveCorners(Fills.PaddingColor, Inset(borderRadii, Prop.BorderWidth));
+        var contentRadii = ResolveCorners(
+            Fills.ContentColor,
+            Inset(paddingRadii, Prop.PaddingWidth)
         );
-        Fill(
-            batcher,
-            borderRect,
-            Fills.BorderColor,
-            paddingRect,
-            ResolveCorners(Fills.BorderColor)
-        );
-        Fill(batcher, paddingRect, Fills.PaddingColor, Content, ResolveCorners(Fills.PaddingColor));
-        Fill(batcher, Content, Fills.ContentColor, Rect2.Empty, ResolveCorners(Fills.ContentColor));
+        var shadowRadii = ResolveCorners(Fills.ShadowColor, borderRadii);
 
-        // Draw all children
+        //   rect         fill                 cutRect       outer radii    cut radii
+        Fill(batcher, shadowRect, Fills.ShadowColor, paddingRect, shadowRadii, paddingRadii);
+        Fill(batcher, borderRect, Fills.BorderColor, paddingRect, borderRadii, paddingRadii);
+        Fill(batcher, paddingRect, Fills.PaddingColor, Content, paddingRadii, contentRadii);
+        Fill(batcher, Content, Fills.ContentColor, Rect2.Empty, contentRadii, default); // Draw all children
         foreach (var child in Children)
         {
             child.Draw(batcher, frameTime);
         }
     }
 
-    private Vect4 ResolveCorners(UiFill fill)
-    {
-        if (fill.RoundedCorners.Equals(default(Vect4)))
-            return Prop.RoundedCorners;
-        return fill.RoundedCorners;
-    }
+    private static Vect4 ResolveCorners(UiFill fill, Vect4 fallback) =>
+        fill.RoundedCorners ?? fallback;
+
+    private static Vect4 Inset(Vect4 r, float d) =>
+        new(
+            MathF.Max(0, r.X - d),
+            MathF.Max(0, r.Y - d),
+            MathF.Max(0, r.Z - d),
+            MathF.Max(0, r.W - d)
+        );
 
     private static void Fill(
         SpriteBatcher batcher,
         Rect2 rect,
         UiFill fill,
         Rect2 toCut,
-        Vect4 corners
+        Vect4 corners,
+        Vect4 cutCorners
     )
     {
         if (rect.Width <= 0 || rect.Height <= 0)
@@ -184,6 +204,7 @@ public class Panel : UIElement<Panel>
 
         batcher.SetShader(shader);
         shader.SetUniform("uCutRect", new Vect4(toCut.X, toCut.Y, toCut.Width, toCut.Height));
+        shader.SetUniform("uCutCornerRadii", cutCorners); // new
         shader.SetUniform("uRect", new Vect4(rect.X, rect.Y, rect.Width, rect.Height));
         shader.SetUniform("uCornerRadii", corners);
         shader.SetUniform("uFillRotation", fill.Rotation);

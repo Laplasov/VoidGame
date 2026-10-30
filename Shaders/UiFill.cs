@@ -38,7 +38,7 @@ public class UiFill
     public Color Color { get; set; }
     public Vect2 Offset { get; set; }
     public float Rotation { get; set; }
-    public Vect4 RoundedCorners { get; set; } = default;
+    public Vect4? RoundedCorners { get; set; } = null;
 
     public IReadOnlyList<FillStep> Steps => _steps;
     public bool IsPlain => _steps.Count == 0;
@@ -81,6 +81,12 @@ public class UiFill
     public UiFill SetRoundedCorners(Vect4 corners)
     {
         RoundedCorners = corners;
+        return this;
+    }
+
+    public UiFill SetAlpha(float alpha)
+    {
+        Color = Color.WithAlpha(alpha);
         return this;
     }
 }
