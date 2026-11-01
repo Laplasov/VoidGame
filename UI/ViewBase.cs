@@ -8,11 +8,16 @@ namespace VoidGame.UI;
 
 public class ViewBase
 {
-    protected HoverBox HoverBoxElement = new HoverBox().SetFill(Color.Yellow).SetOutlineSize(2f);
-    protected UIElement RootElement = new Root();
+    protected TargetBox HoverBoxElement = new TargetBox().SetFill(Color.Yellow).SetOutlineSize(2f);
+    protected TargetBox FocusBoxElement = new TargetBox().SetFill(Color.Blue).SetOutlineSize(2f);
+
+    protected Root RootElement = new Root();
     protected float LimitDelta = 0f;
     protected float Delta = 0f;
     protected bool IsHoverBoxActive = true;
+    protected bool IsFocusBoxActive = true;
+    protected int CurrentFocusIndex = 0;
+    protected int CurrentRootFocusIndex = 0;
 
     protected ViewBase() { }
 
@@ -28,21 +33,31 @@ public class ViewBase
 
     public virtual void OnUpdate(FrameTime frameTime)
     {
-        var viewport = GameSettings.Instance.Viewport;
         DeltaUpdate(frameTime);
         MouseState state = Mouse.GetState();
+        TargetPack mouse = new TargetPack(Mouse.GetState());
+        var viewport = GameSettings.Instance.Viewport;
         var window = GameSettings.Instance.Window;
-
-        Vect2 mousePos = new Vect2(
-            state.Position.X * viewport.X / window.X,
-            state.Position.Y * viewport.Y / window.Y
-        );
-
         var rootRect = new Rect2(0, 0, viewport.X, viewport.Y);
 
         RootElement.UpdateLayout(rootRect);
-        var hoverElement = RootElement.MouseUpdate(mousePos);
+
+        var hoverElement = RootElement.TargetUpdate(mouse);
         HoverBoxElement.Target = hoverElement;
+
+        if (CurrentFocusIndex < CurrentRootFocusIndex)
+        {
+            CurrentFocusIndex = RootElement.MaxIndex();
+            if (CurrentFocusIndex < CurrentRootFocusIndex)
+                CurrentFocusIndex = CurrentRootFocusIndex;
+        }
+
+        UIElement.OnFocuse = RootElement.FindByIndex(CurrentFocusIndex);
+        FocusBoxElement.Target = UIElement.OnFocuse;
+
+        if (UIElement.OnFocuse == null)
+            CurrentFocusIndex = CurrentRootFocusIndex;
+
         UpdateExtension(frameTime);
     }
 
@@ -53,5 +68,7 @@ public class ViewBase
         RootElement.Draw(batcher, frameTime);
         if (IsHoverBoxActive)
             HoverBoxElement.Draw(batcher, frameTime);
+        if (IsFocusBoxActive && UIElement.OnFocuse != null)
+            FocusBoxElement.Draw(batcher, frameTime);
     }
 }

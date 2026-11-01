@@ -11,8 +11,6 @@ public class ScrollBar : Box
     private float _maxScroll;
     private float _currentOffset;
 
-    public override bool Hoverable { get; set; } = true;
-
     public ScrollBar()
     {
         AddChild(Thumb);

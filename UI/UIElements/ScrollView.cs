@@ -29,25 +29,55 @@ public class ScrollView : UIElement<ScrollView>
     public Vect2 ScrollSpace { get; set; }
     public bool AutoHeight { get; set; }
 
+    private bool _isDragging = false;
+    private Vect2 _draggingLastPosition = Vect2.Zero;
+
     public ScrollView SetAutoHeight(bool auto = true)
     {
         AutoHeight = auto;
         return this;
     }
 
-    public override UIElement MouseUpdate(Vect2 mousePosition)
+    public override UIElement TargetUpdate(TargetPack mouse)
     {
-        bool isInside =
-            mousePosition.X >= Bounds.X
-            && mousePosition.X <= Bounds.X + Bounds.Width
-            && mousePosition.Y >= Bounds.Y
-            && mousePosition.Y <= Bounds.Y + Bounds.Height;
+        bool isInside = mouse.IsInside(Bounds);
+        bool overThumb = mouse.IsInside(ScrollTool.Thumb.Bounds);
+        bool isMouseDown = mouse.IsMouseDown;
 
-        if (!Content.Contains(mousePosition))
+        if (!isMouseDown)
+            _isDragging = false;
+
+        if (_isDragging)
+        {
+            // 1. How much the mouse moved this frame
+            float mouseDeltaY = mouse.ScaledPosition.Y - _draggingLastPosition.Y;
+
+            // 2. Convert screen pixels to content offset pixels
+            float trackHeight = ScrollTool.Bounds.Height;
+            float thumbHeight = trackHeight * ScrollTool.VisibleRatio;
+            float maxTravel = trackHeight - thumbHeight;
+            float maxY = MathF.Max(0f, ScrollSpace.Y - Content.Height);
+
+            float offsetDelta = (maxTravel > 0) ? (mouseDeltaY / maxTravel) * maxY : 0;
+
+            // 3. Apply the converted delta to the Offset
+            var newPosition = new Vect2(Offset.X, Offset.Y + offsetDelta);
+            ScrollTo(newPosition);
+
+            _draggingLastPosition = mouse.ScaledPosition;
+        }
+
+        if (!_isDragging && isMouseDown && overThumb)
+        {
+            _isDragging = true;
+            _draggingLastPosition = mouse.ScaledPosition;
+        }
+
+        if (!Content.Contains(mouse.ScaledPosition))
             return isInside && Hoverable ? this : null;
 
         // The bar is drawn on top of the content, so it gets the first chance
-        return ScrollTool.MouseUpdate(mousePosition) ?? base.MouseUpdate(mousePosition);
+        return ScrollTool.TargetUpdate(mouse) ?? base.TargetUpdate(mouse);
     }
 
     public override void UpdateLayout(Rect2 parentContent)

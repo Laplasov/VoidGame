@@ -4,6 +4,8 @@ using Void.Engine;
 using Void.Engine.Assets.Loaders.Fonts;
 using Void.Engine.Coroutines.Routines.Time;
 using Void.Engine.Graphics;
+using Void.Engine.Inputs.InputActions;
+using Void.Engine.Inputs.Keyboards;
 using Void.Engine.Inputs.Mouses;
 using Void.Engine.Systems;
 using VoidGame.Shaders;
@@ -20,8 +22,6 @@ public class View : ViewBase
     private ScrollView _scroller;
 
     private UiFill RedBoy;
-
-    private HoverBox _hoverBox = new HoverBox().SetFill(Color.Yellow).SetOutlineSize(2f);
 
     private GradientStep _sky = new GradientStep(Color.DarkGray, new Vect2(0, 1));
 
@@ -69,12 +69,20 @@ public class View : ViewBase
 
         _scroller.AddChild(_scrollText);
 
+        _panel.Index = 2;
+        _scrollTest.Index = 1;
+
         RootElement.AddChild(_panel);
         RootElement.AddChild(_scrollTest);
     }
 
     protected override void UpdateExtension(FrameTime frameTime)
     {
-        _scroller.ScrollBy(new Vect2(0, Delta));
+        var actions = InputAction.GetState();
+        if (actions.IsJustPressed("Up"))
+            CurrentFocusIndex--;
+        if (actions.IsJustPressed("Down"))
+            CurrentFocusIndex++;
+        // _scroller.ScrollBy(new Vect2(0, Delta));
     }
 }

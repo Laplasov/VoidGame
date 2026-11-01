@@ -54,6 +54,8 @@ public sealed class VoidGameGame(GameSettings setting) : Game(setting)
         _saveLoadManager.LoadNpcsForCurrentLevel();
 
         InputAction.AddAction("Enter").AddKey(KeyboardKey.Space);
+        InputAction.AddAction("Down").AddKey(KeyboardKey.Down);
+        InputAction.AddAction("Up").AddKey(KeyboardKey.Up);
     }
 
     protected override void OnUpdate(FrameTime frameTime)

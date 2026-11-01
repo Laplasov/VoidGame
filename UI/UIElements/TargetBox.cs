@@ -4,24 +4,24 @@ using VoidGame.Shaders;
 
 namespace VoidGame.UI.UIElements;
 
-public class HoverBox : Box
+public class TargetBox : Box
 {
     public float OutlineSize { get; set; } = 2f;
     public UIElement Target { get; set; }
 
-    public HoverBox SetOutlineSize(float size)
+    public TargetBox SetOutlineSize(float size)
     {
         OutlineSize = size;
         return this;
     }
 
-    public new HoverBox SetFill(UiFill fill)
+    public new TargetBox SetFill(UiFill fill)
     {
         Fill = fill;
         return this;
     }
 
-    public HoverBox SetTarget(UIElement target)
+    public TargetBox SetTarget(UIElement target)
     {
         Target = target;
         return this;

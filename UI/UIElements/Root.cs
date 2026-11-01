@@ -20,11 +20,9 @@ public class Root : UIElement<Root>
             child.Draw(batcher, frameTime);
     }
 
-    public override UIElement MouseUpdate(Vect2 mousePosition)
+    public override UIElement TargetUpdate(TargetPack mouse)
     {
-        // Root covers the whole screen, so it would always be hit when nothing else is.
-        // Hovering empty space should give null, not the root.
-        var hit = base.MouseUpdate(mousePosition);
+        var hit = base.TargetUpdate(mouse);
         return hit == this ? null : hit;
     }
 }
