@@ -1,4 +1,5 @@
 using System.Text;
+using Void.Engine.Systems;
 
 namespace VoidGame.Shaders;
 
@@ -19,11 +20,17 @@ public static class FillPrograms
 
     public static void Apply(UiFill fill, CutoutShaderWrapper shader)
     {
-        if (fill.IsPlain)
-            return;
+        var src = fill.Image.GetSource;
 
+        shader.SetUniform("uColor", fill.Color);
         shader.SetUniform("uFillOffset", fill.Offset);
         shader.SetUniform("uFillRotation", fill.Rotation * (MathF.PI / 180f));
+        shader.SetUniform("uImageSource", fill.Image.GetImageVect4);
+        shader.SetUniform("uScaleMode", (int)fill.Image.ScaleMode);
+        shader.SetUniform("uTextureSize", new Vect2(src.Width, src.Height));
+
+        if (fill.IsPlain)
+            return;
 
         for (int i = 0; i < fill.Steps.Count; i++)
             fill.Steps[i].Apply(shader, i.ToString());

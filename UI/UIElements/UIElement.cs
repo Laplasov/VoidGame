@@ -1,7 +1,4 @@
-using System.Diagnostics;
-using Void.Engine.Assets.Loaders;
 using Void.Engine.Graphics;
-using Void.Engine.Inputs.Mouses;
 using Void.Engine.Systems;
 
 namespace VoidGame.UI.UIElements;
@@ -25,7 +22,6 @@ public abstract class UIElement
     public virtual bool Disabled { get; set; } = false;
 
     protected List<UIElement> Children = new List<UIElement>();
-    protected static Texture WhitePixel = new Texture(new Vect2(1, 1), Color.White);
 
     public Action<UIElement> OnClick { get; set; }
     public static UIElement OnFocuse = null;

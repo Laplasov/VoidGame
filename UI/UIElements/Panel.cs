@@ -207,13 +207,10 @@ public class Panel : UIElement<Panel>
         shader.SetUniform("uCutCornerRadii", cutCorners); // new
         shader.SetUniform("uRect", new Vect4(rect.X, rect.Y, rect.Width, rect.Height));
         shader.SetUniform("uCornerRadii", corners);
-        shader.SetUniform("uFillRotation", fill.Rotation);
-        shader.SetUniform("uFillOffset", fill.Offset);
-        shader.SetUniform("uColor", fill.Color);
 
         FillPrograms.Apply(fill, shader);
 
-        batcher.DrawBypassAtlas(WhitePixel, rect, WhitePixel.Bounds, fill);
+        batcher.DrawBypassAtlas(fill.Image.GetTexture, rect, fill.Image.GetSource, fill.Color);
 
         batcher.Flush();
         batcher.ClearShader();

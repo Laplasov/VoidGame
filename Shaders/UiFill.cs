@@ -1,3 +1,4 @@
+using Void.Engine.Assets.Loaders;
 using Void.Engine.Graphics.Shaders;
 using Void.Engine.Systems;
 
@@ -35,6 +36,7 @@ public class UiFill
 
     public UiFill(Color color) => Color = color;
 
+    public UiIcon Image { get; set; } = new UiIcon();
     public Color Color { get; set; }
     public Vect2 Offset { get; set; }
     public float Rotation { get; set; }
@@ -43,6 +45,14 @@ public class UiFill
     public IReadOnlyList<FillStep> Steps => _steps;
     public bool IsPlain => _steps.Count == 0;
     internal string Key => _key ??= string.Join('|', _steps.Select(s => s.Name));
+
+    public UiFill SetImage(Texture image, Rect2? source = null, ScaleMode mode = ScaleMode.Stretch)
+    {
+        Image.Image = image;
+        Image.ImageSource = source;
+        Image.ScaleMode = mode;
+        return this;
+    }
 
     public UiFill Add(FillStep step)
     {

@@ -2,6 +2,7 @@ using Void.Engine;
 using Void.Engine.Graphics;
 using Void.Engine.Inputs.Mouses;
 using Void.Engine.Systems;
+using VoidGame.Shaders;
 using VoidGame.UI.UIElements;
 
 namespace VoidGame.UI;
@@ -18,6 +19,7 @@ public class ViewBase
     protected bool IsFocusBoxActive = true;
     protected int CurrentFocusIndex = 0;
     protected int CurrentRootFocusIndex = 0;
+    protected List<UiIcon> IconList = new List<UiIcon>();
 
     protected ViewBase() { }
 
@@ -58,7 +60,8 @@ public class ViewBase
         if (UIElement.OnFocuse == null)
             CurrentFocusIndex = CurrentRootFocusIndex;
 
-        UpdateExtension(frameTime);
+        foreach (UiIcon icon in IconList)
+            UpdateExtension(frameTime);
     }
 
     protected virtual void UpdateExtension(FrameTime frameTime) { }

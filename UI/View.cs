@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Diagnostics;
 using Void.Engine;
+using Void.Engine.Assets;
+using Void.Engine.Assets.Loaders;
 using Void.Engine.Assets.Loaders.Fonts;
 using Void.Engine.Coroutines.Routines.Time;
 using Void.Engine.Graphics;
@@ -72,8 +74,18 @@ public class View : ViewBase
         _panel.Index = 2;
         _scrollTest.Index = 1;
 
+        var icon = Color
+            .White.ToFill()
+            .SetImage(image: AssetManager.Instance.Load<Texture>("bird.png"), mode: ScaleMode.Fit);
+
+        icon.Image.ImageSource = new Rect2(0, 0, 32f, 32f);
+
+        var slot = new Box().SetFill(icon);
+        slot.Size = new Vect2(0.2f, 0.2f);
+
         RootElement.AddChild(_panel);
         RootElement.AddChild(_scrollTest);
+        RootElement.AddChild(slot);
     }
 
     protected override void UpdateExtension(FrameTime frameTime)

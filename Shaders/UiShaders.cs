@@ -57,6 +57,8 @@ public class CutoutShaderWrapper : IShader
         uniform float uFillRotation;
         uniform vec4 uCornerRadii;
         uniform vec4 uCutCornerRadii;
+        uniform vec4 uImageSource;
+        uniform int uScaleMode;
 
         out vec4 FragColor;
         ";
@@ -77,15 +79,11 @@ public class CutoutShaderWrapper : IShader
     }
 
     void main() {
-        // Size of one screen pixel in UI units (keeps the AA ramp ~1px wide)
         float px = max(fwidth(vLocalPos.x), 1e-4);
 
-        // Outer shape: 1 inside, 0 outside, ~1px ramp on the edge
         float outerSdf = roundedRectSdf(vLocalPos, uRect, uCornerRadii);
         float coverage = clamp(0.5 - outerSdf / px, 0.0, 1.0);
 
-        // Cut-out hole: 0 inside the hole, 1 outside it.
-        // The '+ 1.0' lets this layer extend ~1px under the next layer.
         if (uCutRect.z > 0.0 && uCutRect.w > 0.0) {
             float cutSdf = roundedRectSdf(vLocalPos, uCutRect, uCutCornerRadii);
             coverage *= clamp(cutSdf / px + 1.0, 0.0, 1.0);
@@ -93,7 +91,34 @@ public class CutoutShaderWrapper : IShader
 
         if (coverage <= 0.0) discard;
 
+        // 1. Calculate base UV (0.0 to 1.0 across the box)
         vec2 uv = (vLocalPos - uRect.xy) / uRect.zw;
+
+        // 2. SCALE MODE LOGIC (Fit)
+        if (uScaleMode == 1) { 
+            float rectAspect = uRect.z / uRect.w;
+            float texAspect = uTextureSize.x / uTextureSize.y;
+            
+            if (rectAspect > texAspect) {
+                // Box is wider than image. Expand UV X to center the image.
+                uv.x = (uv.x - 0.5) * (rectAspect / texAspect) + 0.5;
+            } else {
+                // Box is taller than image. Expand UV Y to center the image.
+                uv.y = (uv.y - 0.5) * (texAspect / rectAspect) + 0.5;
+            }
+            
+            // Discard pixels outside the 0-1 range so the background doesn't repeat
+            if (uv.x < 0.0 || uv.x > 1.0 || uv.y < 0.0 || uv.y > 1.0) {
+                discard;
+            }
+        }
+
+        // 3. Apply Image Source (if any)
+        if (uImageSource.z > 0.0) {
+            uv = uImageSource.xy + (uv * uImageSource.zw);
+        }
+
+        // 4. Apply Rotation and Offset
         float aspect = uRect.z / uRect.w;
         vec2 p = (uv - 0.5) * vec2(aspect, 1.0);
         float c = cos(uFillRotation);
@@ -101,9 +126,10 @@ public class CutoutShaderWrapper : IShader
         p = vec2(c * p.x + s * p.y, -s * p.x + c * p.y);
         uv = p / vec2(aspect, 1.0) + 0.5 - uFillOffset;
 
+        // 5. Sample Texture
         vec4 baseColor = uColor;
         if (uUseTexture == 1)
-            baseColor *= texture(uTexture, vTexCoord);
+            baseColor *= texture(uTexture, uv);
 
         vec4 col = fill(uv, vLocalPos, baseColor);
         FragColor = vec4(col.rgb, col.a * coverage);

@@ -53,21 +53,11 @@ public class Box : UIElement<Box>
         shader.SetUniform("uCutRect", new Vect4(0, 0, 0, 0));
         shader.SetUniform("uCutRadii", new Vect4(0, 0, 0, 0));
         shader.SetUniform("uRect", new Vect4(rect.X, rect.Y, rect.Width, rect.Height));
-
-        // Use the fill's custom corners if set, otherwise default (0,0,0,0)
         shader.SetUniform("uCornerRadii", fill.RoundedCorners ?? new Vect4(0, 0, 0, 0));
-        shader.SetUniform("uFillRotation", fill.Rotation);
-        shader.SetUniform("uFillOffset", fill.Offset);
-        shader.SetUniform("uColor", fill.Color);
 
         FillPrograms.Apply(fill, shader);
 
-        batcher.DrawBypassAtlas(
-            UIElement.WhitePixel,
-            rect,
-            UIElement.WhitePixel.Bounds,
-            fill.Color
-        );
+        batcher.DrawBypassAtlas(fill.Image.GetTexture, rect, fill.Image.GetSource, fill.Color);
 
         batcher.Flush();
         batcher.ClearShader();

@@ -1,5 +1,6 @@
 using Void.Engine;
 using Void.Engine.Assets;
+using Void.Engine.Assets.Loaders;
 using Void.Engine.Assets.Loaders.Fonts;
 using Void.Engine.Assets.Loaders.LDtk;
 using Void.Engine.Assets.Loaders.LDtk.Instances;

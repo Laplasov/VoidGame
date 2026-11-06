@@ -59,21 +59,12 @@ public class TargetBox : Box
         // Provide the cut bounds to the shader!
         shader.SetUniform("uCutRect", new Vect4(toCut.X, toCut.Y, toCut.Width, toCut.Height));
         shader.SetUniform("uCutRadii", new Vect4(0, 0, 0, 0)); // Sharp inner edge
-
         shader.SetUniform("uRect", new Vect4(rect.X, rect.Y, rect.Width, rect.Height));
         shader.SetUniform("uCornerRadii", fill.RoundedCorners ?? new Vect4(0, 0, 0, 0));
-        shader.SetUniform("uFillRotation", fill.Rotation);
-        shader.SetUniform("uFillOffset", fill.Offset);
-        shader.SetUniform("uColor", fill.Color);
 
         FillPrograms.Apply(fill, shader);
 
-        batcher.DrawBypassAtlas(
-            UIElement.WhitePixel,
-            rect,
-            UIElement.WhitePixel.Bounds,
-            fill.Color
-        );
+        batcher.DrawBypassAtlas(fill.Image.GetTexture, rect, fill.Image.GetSource, fill.Color);
 
         batcher.Flush();
         batcher.ClearShader();
